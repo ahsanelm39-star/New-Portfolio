@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     order: 1,
     title: {
       en: 'Al Awad Residential & Commercial Solutions',
-      ar: 'العوض للحلول السكنية والتجارية المتكاملة',
+      ar: 'العواد للحلول السكنية والتجارية المتكاملة',
     },
     tagline: {
       en: 'Integrated contracting, industrial services, and facilities architecture in Kuwait.',

@@ -294,8 +294,8 @@ export const SERVICES: ServiceItem[] = [
       ar: 'خبرة سابقة متعمقة في كواليس وكالات التسويق في الكويت، وإدارة الحسابات الفرعية ومسارات التحويل.',
     },
     description: {
-      en: 'Before focusing primarily on bespoke Webflow architecture, I spent over two years working behind the scenes for a Kuwait-based digital marketing company. This extensive experience inside GoHighLevel, CRM automations, lead routing webhooks, and agency delivery workflows gives me deep practical understanding of how real businesses acquire and convert customers.',
-      ar: 'قبل التركيز التام على التخصص في Webflow، عملت لأكثر من عامين خلف الكواليس لصالح شركة تسويق رقمي كويتية. هذه الخبرة العملية الطويلة مع منصة GoHighLevel، وأتمتة مسارات الـ CRM، وربط نماذج العملاء، منحتني فهماً حقيقياً وعميقاً لكيفية تفكير الشركات وتوليد المبيعات على أرض الواقع.',
+      en: 'Before focusing primarily on bespoke Webflow architecture, I spent working behind the scenes for a Kuwait-based digital marketing company. This extensive experience inside GoHighLevel,lead routing webhooks, and agency delivery workflows gives me deep practical understanding of how real businesses acquire and convert customers.',
+      ar: 'قبل التركيز التام على التخصص في Webflow، عملت خلف الكواليس لصالح شركة تسويق رقمي كويتية. هذه الخبرة العملية مع منصة GoHighLevel، وربط نماذج العملاء، منحتني فهماً حقيقياً وعميقاً لكيفية تفكير الشركات وتوليد المبيعات على أرض الواقع.',
     },
     deliverables: {
       en: [

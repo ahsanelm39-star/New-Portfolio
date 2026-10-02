@@ -17,62 +17,69 @@ export default function Hero() {
       <div className="ambient-glow-indigo w-[700px] h-[700px] top-1/4 -right-60 opacity-60"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Top Eyebrow Status Pill */}
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/25 text-sky-300 text-xs font-mono tracking-wide backdrop-blur-md">
-            <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-            <span>{t.hero.badge}</span>
-          </div>
+      <div className='flex justify-between max-md:flex-col'>
+        <div>
+                  {/* Top Eyebrow Status Pill */}
+                <div className="flex flex-wrap items-center gap-3 mb-6 ">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/25 text-sky-300 text-xs font-mono tracking-wide backdrop-blur-md">
+                    <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                    <span>{t.hero.badge}</span>
+                  </div>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
-            <span className="sm:hidden">Available for Projects</span>
-          </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
+                    <span className="sm:hidden">Available for Projects</span>
+                  </div>
+                </div>
+
+                {/* Main Display Headline */}
+                <div className="max-w-4xl space-y-6">
+                  <h1 className="text-4xl sm:text-5xl  lg:text-6xl font-extrabold text-white tracking-tight leading-[1.08] text-balance">
+                    <span>{t.hero.headlineStart} </span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-blue-500">
+                      {t.hero.headlineAccent}
+                    </span>{' '}
+                    <span>{t.hero.headlineEnd}</span>
+                  </h1>
+
+                  <p className="text-slate-300 text-base sm:text-xl lg:text-2xl font-normal leading-relaxed max-w-2xl text-pretty">
+                    {t.hero.subtext}
+                  </p>
+                </div>
+
+                {/* CTAs & Subordinate Credibility */}
+                <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-7 py-4 rounded-full bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500 hover:from-sky-300 hover:to-blue-400 text-slate-950 shadow-lg shadow-sky-500/25 hover:shadow-sky-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  >
+                    <span>{t.hero.ctaContact}</span>
+                    <ArrowUpRight className={cn('w-4 h-4', isRtl && 'rotate-90')} />
+                  </Link>
+
+                  <Link
+                    href="#selected-work"
+                    className="inline-flex items-center justify-center gap-2 text-sm font-medium px-7 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-400/40 text-slate-200 hover:text-white backdrop-blur-sm transition-all"
+                  >
+                    <span>{t.hero.ctaWork}</span>
+                  </Link>
+                </div>
+
+                {/* Subordinate Credibility Pill */}
+                <div className="mt-6 text-xs text-slate-400 font-mono tracking-wider flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400/70"></span>
+                  <span>{t.hero.credibilityLine}</span>
+                </div>
         </div>
-
-        {/* Main Display Headline */}
-        <div className="max-w-4xl space-y-6">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08] text-balance">
-            <span>{t.hero.headlineStart} </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-blue-500">
-              {t.hero.headlineAccent}
-            </span>{' '}
-            <span>{t.hero.headlineEnd}</span>
-          </h1>
-
-          <p className="text-slate-300 text-base sm:text-xl lg:text-2xl font-normal leading-relaxed max-w-2xl text-pretty">
-            {t.hero.subtext}
-          </p>
+        <div className='max-md:mt-6'>
+          <Image src={'/images/ahmed.png'} alt='ahmed mohamed' width={500} height={400}
+          className='rounded-md'/>
         </div>
-
-        {/* CTAs & Subordinate Credibility */}
-        <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-7 py-4 rounded-full bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500 hover:from-sky-300 hover:to-blue-400 text-slate-950 shadow-lg shadow-sky-500/25 hover:shadow-sky-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
-          >
-            <span>{t.hero.ctaContact}</span>
-            <ArrowUpRight className={cn('w-4 h-4', isRtl && 'rotate-90')} />
-          </Link>
-
-          <Link
-            href="#selected-work"
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium px-7 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-400/40 text-slate-200 hover:text-white backdrop-blur-sm transition-all"
-          >
-            <span>{t.hero.ctaWork}</span>
-          </Link>
-        </div>
-
-        {/* Subordinate Credibility Pill */}
-        <div className="mt-6 text-xs text-slate-400 font-mono tracking-wider flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-sky-400/70"></span>
-          <span>{t.hero.credibilityLine}</span>
-        </div>
+    </div>
 
         {/* Cinematic Visual Centerpiece: Floating Layered Architecture Mockup */}
-        <div className="mt-14 lg:mt-20 relative">
+        <div className="mt-14 lg:mt-20 relative max-md:hidden">
           
           {/* Main Architectural Browser Frame */}
           <div className="relative rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 bg-gradient-to-b from-white/15 via-white/5 to-white/0 border border-white/10 shadow-2xl shadow-black/80 backdrop-blur-sm overflow-hidden group">
@@ -84,7 +91,7 @@ export default function Hero() {
                 <span className="w-3 h-3 rounded-full bg-amber-500/80"></span>
                 <span className="w-3 h-3 rounded-full bg-emerald-500/80"></span>
                 <span className="ml-3 text-[11px] font-mono text-slate-500 hidden sm:inline-block">
-                  https://ahmed-portfolio.design/al-awad-solutions
+                  https://alawad-arch.com
                 </span>
               </div>
               
@@ -124,7 +131,7 @@ export default function Hero() {
 
                 <div className="flex items-center gap-3 shrink-0">
                   <a
-                    href="https://sites.leadconnectorhq.com/preview/IQq15taDxEKKz613KiRd"
+                    href="https://alawad-arch.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white backdrop-blur-md transition-all"
@@ -168,7 +175,7 @@ export default function Hero() {
         </div>
 
         {/* Metric Intelligence Strip */}
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8 pt-10 border-t border-white/10">
+        <div className="md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-10 md:border-t border-white/10">
           <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
             <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.projectsValue}
@@ -187,7 +194,15 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="col-span-2 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+          <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+            <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+              GCC
+            </div>
+            <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
+              Specialization
+            </div>
+          </div>
+          <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
             <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.gccValue}
             </div>
