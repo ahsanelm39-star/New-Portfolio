@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
       ar: 'ثنائي اللغة (عربي RTL وإنجليزي LTR)',
     },
     image: '/images/projects/alawad.png',
-    liveUrl: 'https://sites.leadconnectorhq.com/preview/IQq15taDxEKKz613KiRd',
+    liveUrl: 'https://alawad-arch.com',
     overview: {
       en: 'Al Awad is a multi-sector Kuwaiti enterprise delivering large-scale residential, commercial, and industrial infrastructure services. The client required a digital presence that organized disparate industrial capabilities into an authoritative, easily digestible commercial architecture.',
       ar: 'تعد شركة العوض من الكيانات الكويتية الرائدة في تقديم الحلول الإنشائية والخدمات المتكاملة للقطاعات السكنية والتجارية والصناعية. تطلب المشروع واجهة مؤسسية تنظم مجالات العمل المتشعبة ضمن هيكل بصري واضح يعزز ثقة الشركات وملاك العقارات.',

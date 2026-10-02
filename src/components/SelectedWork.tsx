@@ -120,7 +120,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
 
                     {heroProject.liveUrl && (
                       <a
-                        href={heroProject.liveUrl}
+                        href={'https://alawad-arch.com/'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-xs font-medium px-4 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition-all"
