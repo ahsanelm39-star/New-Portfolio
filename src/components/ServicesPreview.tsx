@@ -81,7 +81,7 @@ export default function ServicesPreview() {
                   href="/services"
                   className="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
                 >
-                  <span>Learn more</span>
+                  <span>{t.servicesSection.learnMore}</span>
                   <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />
                 </Link>
                 <span className="text-[11px] font-mono text-slate-500">

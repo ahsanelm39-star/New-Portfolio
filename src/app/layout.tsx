@@ -34,23 +34,25 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ahmed-portfolio.design'),
+  metadataBase: new URL('https://ahmed-webflow.vercel.app'),
   title: {
-    default: 'Ahmed | High-End Webflow Specialist & Digital Designer',
-    template: '%s | Ahmed — Webflow Specialist',
+    default: 'Ahmed | Webflow Developer for Agencies & GCC Brands',
+    template: '%s | Ahmed — Webflow Developer',
   },
   description:
-    'High-end Webflow specialist, web designer, and custom-code developer. 16+ delivered commercial client projects across Kuwait, the GCC, and internationally.',
+    'Independent Webflow developer for agencies, studios and companies in Kuwait and the GCC. Figma-to-Webflow implementation, custom HTML/CSS/JavaScript, GoHighLevel and Arabic RTL.',
   keywords: [
-    'Webflow Specialist',
-    'Webflow Designer',
+    'Webflow Developer',
+    'Webflow Development',
+    'Figma to Webflow',
     'Webflow Developer Kuwait',
-    'Bilingual Webflow Arabic RTL',
-    'Custom Code Webflow',
-    'Premium Web Design GCC',
+    'Webflow Developer GCC',
+    'GoHighLevel Developer',
+    'Arabic RTL Webflow',
+    'Custom Webflow Development',
     'Ahmed Webflow Portfolio',
   ],
-  authors: [{ name: 'Ahmed', url: 'https://ahmed-web-3.vercel.app' }],
+  authors: [{ name: 'Ahmed' }],
   creator: 'Ahmed',
   publisher: 'Ahmed',
   robots: {
@@ -60,29 +62,32 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ahmed-web-3.vercel.app',
-    siteName: 'Ahmed — Webflow Specialist',
-    title: 'Ahmed | High-End Webflow Specialist & Digital Designer',
+    url: 'https://ahmed-webflow.vercel.app/',
+    siteName: 'Ahmed — Webflow Developer',
+    title: 'Ahmed | Webflow Developer for Agencies & GCC Brands',
     description:
-      'High-end Webflow specialist and web designer with custom-code capability. 16+ delivered client projects across Kuwait and the GCC.',
+      'Independent Webflow developer for agencies, studios and companies in Kuwait and the GCC. Figma-to-Webflow implementation, custom development, GoHighLevel and Arabic RTL.',
     images: [
       {
         url: '/images/projects/alawad.png',
         width: 1200,
         height: 630,
-        alt: 'Ahmed Webflow Specialist Portfolio',
+        alt: 'Al Awad client website implementation by Ahmed',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ahmed | High-End Webflow Specialist & Digital Designer',
+    title: 'Ahmed | Webflow Developer for Agencies & GCC Brands',
     description:
-      'High-end Webflow specialist and web designer with custom-code capability. 16+ delivered client projects across Kuwait and the GCC.',
+      'Independent Webflow developer for agencies, studios and companies in Kuwait and the GCC. Figma-to-Webflow, custom code, GoHighLevel and Arabic RTL.',
     images: ['/images/projects/alawad.png'],
   },
   icons: {
     icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: '/',
   },
 };
 

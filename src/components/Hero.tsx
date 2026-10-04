@@ -29,7 +29,7 @@ export default function Hero() {
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                     <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
-                    <span className="sm:hidden">Available for Projects</span>
+                    <span className="sm:hidden">{t.hero.statusAvailable}</span>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ export default function Hero() {
                 </div>
         </div>
         <div className='max-md:mt-6'>
-          <Image src={'/images/ahmed.png'} alt='ahmed mohamed' width={500} height={400}
+          <Image src={'/images/ahmed.png'} alt='Ahmed, independent Webflow developer' width={500} height={400}
           className='rounded-md'/>
         </div>
     </div>
@@ -97,10 +97,10 @@ export default function Hero() {
               
               <div className="flex items-center gap-3 text-[11px] font-mono text-sky-400">
                 <span className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-sky-400/10 border border-sky-400/20">
-                  <Layers className="w-3 h-3" /> Webflow Native + Custom CSS
+                  <Layers className="w-3 h-3" /> Webflow + Custom CSS
                 </span>
                 <span className="px-2 py-0.5 rounded bg-white/5 text-slate-300">
-                  Bilingual RTL/LTR
+                  Arabic RTL & English LTR
                 </span>
               </div>
             </div>
@@ -112,6 +112,7 @@ export default function Hero() {
                 alt="Al Awad Residential & Commercial Solutions - Kuwait"
                 fill
                 priority
+                sizes="100vw"
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
               />
 
@@ -119,13 +120,13 @@ export default function Hero() {
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#07080a] via-[#07080a]/70 to-transparent p-6 sm:p-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
                 <div>
                   <div className="text-[11px] font-mono uppercase tracking-widest text-sky-400 font-semibold mb-1">
-                    Featured Commercial Case Study
+                    {t.caseStudy.clientProject}
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                     Al Awad Residential & Commercial Solutions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 max-w-xl line-clamp-1 sm:line-clamp-2 mt-1">
-                    Integrated contracting and industrial services in Kuwait. Engineered with crisp bilingual symmetry and clear corporate hierarchy.
+                    {t.hero.featuredDescription}
                   </p>
                 </div>
 
@@ -136,14 +137,14 @@ export default function Hero() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white backdrop-blur-md transition-all"
                   >
-                    <span>View Live Demo</span>
+                    <span>{t.workSection.viewLiveDemo}</span>
                     <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />
                   </a>
                   <Link
                     href="/work/al-awad-solutions"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-sky-400 hover:bg-sky-300 text-slate-950 transition-all shadow-md shadow-sky-500/20"
                   >
-                    <span>Read Study</span>
+                    <span>{t.workSection.viewCaseStudy}</span>
                   </Link>
                 </div>
               </div>
@@ -155,10 +156,10 @@ export default function Hero() {
           <div className="hidden lg:flex absolute -top-8 -right-6 glass-panel p-4 rounded-2xl shadow-xl shadow-black/80 flex-col gap-1 max-w-[210px] animate-float">
             <div className="flex items-center gap-2 text-xs font-bold text-white">
               <Code className="w-4 h-4 text-sky-400" />
-              <span>Custom Code Layer</span>
+              <span>{t.hero.customCodeBadge}</span>
             </div>
             <p className="text-[11px] text-slate-400 leading-tight">
-              Bespoke CSS clamp typography & subgrid overrides beyond builder limits.
+              {t.hero.customCodeDescription}
             </p>
           </div>
 
@@ -167,8 +168,8 @@ export default function Hero() {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-white">16+ GCC Projects</div>
-              <div className="text-[11px] text-slate-400">Delivered across Kuwait & the Gulf</div>
+              <div className="text-xs font-bold text-white">{t.hero.metrics.projectsValue} {t.hero.metrics.projectsLabel}</div>
+              <div className="text-[11px] text-slate-400">{t.hero.regionalProof}</div>
             </div>
           </div>
 
@@ -196,10 +197,10 @@ export default function Hero() {
 
           <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
             <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
-              GCC
+              {t.hero.metrics.customCodeValue}
             </div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Specialization
+              {t.hero.metrics.customCodeLabel}
             </div>
           </div>
           <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">

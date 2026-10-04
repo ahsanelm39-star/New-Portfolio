@@ -62,7 +62,7 @@ export default function SpecializationMatrix() {
 
               {/* Bottom Subtle Indicator */}
               <div className="pt-6 mt-6 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span className="group-hover:text-slate-400 transition-colors">Production Capability</span>
+                <span className="group-hover:text-slate-400 transition-colors">{t.specialization.capabilityLabel}</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400/40 group-hover:bg-sky-400 transition-colors"></span>
               </div>
 

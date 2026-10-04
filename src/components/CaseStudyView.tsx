@@ -10,12 +10,8 @@ import {
   ArrowRight,
   ArrowUpRight,
   ExternalLink,
-  ShieldCheck,
   CheckCircle,
   Layers,
-  Sparkles,
-  Code,
-  Globe,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -48,9 +44,9 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
             <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-mono text-sky-400">
               {project.industry[lang]}
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>{t.caseStudy.verifiedDelivery}</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300">
+              <Layers className="w-3.5 h-3.5 text-sky-400" />
+              <span>{project.projectType === 'client' ? t.caseStudy.clientProject : t.caseStudy.conceptProject}</span>
             </span>
           </div>
 
@@ -135,24 +131,27 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               alt={project.title[lang]}
               fill
               priority
+              sizes="(max-width: 1279px) 100vw, 1200px"
               className="object-cover object-top"
             />
           </div>
         </div>
 
         {/* Key Metrics Strip */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-20">
-          {project.metrics.map((metric, idx) => (
-            <div key={idx} className="p-6 rounded-2xl bg-[#0c0f17] border border-white/10 text-center">
-              <div className="text-2xl sm:text-3xl font-extrabold text-sky-400 font-mono">
-                {metric.value}
+        {project.metrics.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-20">
+            {project.metrics.map((metric, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-[#0c0f17] border border-white/10 text-center">
+                <div className="text-2xl sm:text-3xl font-extrabold text-sky-400 font-mono">
+                  {metric.value}
+                </div>
+                <div className="text-xs text-slate-400 mt-1 font-medium">
+                  {metric.label[lang]}
+                </div>
               </div>
-              <div className="text-xs text-slate-400 mt-1 font-medium">
-                {metric.label[lang]}
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
 
         {/* In-Depth Case Study Narrative Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
@@ -248,14 +247,14 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
               {project.platformContextNote && (
                 <div className="p-4 rounded-xl bg-white/5 border border-white/5 text-xs text-slate-300 leading-relaxed">
-                  <span className="font-semibold text-sky-400 block mb-1">Production Context:</span>
+                  <span className="font-semibold text-sky-400 block mb-1">{t.caseStudy.implementationContext}</span>
                   {project.platformContextNote[lang]}
                 </div>
               )}
 
               {/* Technologies */}
               <div className="space-y-2">
-                <span className="text-xs text-slate-400 block">Implementation Stack:</span>
+                <span className="text-xs text-slate-400 block">{t.caseStudy.implementationStack}</span>
                 <div className="flex flex-wrap gap-1.5">
                   {project.techTags.map((tag) => (
                     <span
@@ -285,7 +284,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
               {/* Direct Project Consultation */}
               <div className="pt-4 border-t border-white/5 space-y-2">
-                <span className="text-xs text-slate-300 font-semibold block">Need a similar site?</span>
+                <span className="text-xs text-slate-300 font-semibold block">{t.caseStudy.similarProjectPrompt}</span>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-sky-400 hover:bg-sky-300 text-slate-950 text-xs font-bold transition-all shadow-md shadow-sky-500/20"
@@ -319,7 +318,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               href={`/work/${nextProject.slug}`}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-white transition-all self-start sm:self-auto"
             >
-              <span>Explore Study</span>
+              <span>{t.caseStudy.nextProjectLink}</span>
               <ArrowRight className={cn('w-4 h-4', isRtl && 'rotate-180')} />
             </Link>
           </div>

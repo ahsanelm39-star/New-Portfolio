@@ -29,6 +29,19 @@ export default function WorkPage() {
         return p.category === activeCategory;
       });
 
+  const projectGroups = [
+    {
+      id: 'client-work',
+      title: t.workPage.clientWorkTitle,
+      projects: filteredProjects.filter((project) => project.projectType === 'client'),
+    },
+    {
+      id: 'selected-concepts',
+      title: t.workPage.conceptsTitle,
+      projects: filteredProjects.filter((project) => project.projectType === 'concept'),
+    },
+  ].filter((group) => group.projects.length > 0);
+
   return (
     <div className="pt-32 pb-24 sm:pt-44 sm:pb-32 bg-[#07080a] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,6 +67,7 @@ export default function WorkPage() {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
+                aria-pressed={isActive}
                 className={cn(
                   'px-4 py-2 rounded-full text-xs font-medium transition-all focus:outline-none',
                   isActive
@@ -68,8 +82,13 @@ export default function WorkPage() {
         </div>
 
         {/* Project Archive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+        {projectGroups.map((group) => (
+          <section key={group.id} aria-labelledby={`${group.id}-heading`} className="mb-16 last:mb-0">
+            <h2 id={`${group.id}-heading`} className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8">
+              {group.title}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {group.projects.map((project) => (
             <article
               key={project.slug}
               className="group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10 hover:-translate-y-1"
@@ -81,6 +100,7 @@ export default function WorkPage() {
                     src={project.image}
                     alt={project.title[lang]}
                     fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw"
                     className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
@@ -148,12 +168,15 @@ export default function WorkPage() {
               </div>
 
             </article>
-          ))}
-        </div>
+              ))}
+            </div>
+          </section>
+        ))}
 
         {/* Platform Transparency Notice */}
         <div className="mt-16 p-6 rounded-2xl bg-white/[0.02] border border-white/10 text-xs text-slate-400 text-center font-mono">
-          {t.workPage.platformHonestyNotice}
+          <p>{t.workPage.platformHonestyNotice}</p>
+          <p className="mt-2">{t.workPage.screenshotDisclosure}</p>
         </div>
 
       </div>

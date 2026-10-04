@@ -58,10 +58,10 @@ export default function GccExperienceSection() {
         <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#06080d] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-            <span>Kuwait • Saudi Arabia • UAE • Qatar • Bahrain • Oman</span>
+            <span>{t.gcc.proofLocation}</span>
           </div>
           <div className="text-xs text-sky-400 font-mono tracking-wider">
-            16+ Delivered Gulf Client Builds
+            {t.gcc.proofExperience}
           </div>
         </div>
 

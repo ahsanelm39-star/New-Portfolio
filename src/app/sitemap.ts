@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { PROJECTS } from '@/data/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ahmed-portfolio.design';
+  const baseUrl = 'https://ahmed-webflow.vercel.app';
 
   const projectRoutes = PROJECTS.map((project) => ({
     url: `${baseUrl}/work/${project.slug}`,

@@ -76,22 +76,22 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
-                  Webflow Architecture & Build
+                  {t.footer.webflowService}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
-                  Custom Code (HTML / CSS / JS)
+                  {t.footer.customService}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
-                  Bilingual Arabic (RTL) & English
+                  {t.footer.languageService}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
-                  Webflow CMS & Scalable Structure
+                  {t.footer.ghlService}
                 </Link>
               </li>
             </ul>

@@ -20,13 +20,26 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const project = PROJECTS.find((p) => p.slug === params.slug);
   if (!project) return {};
 
+  const projectKind = project.projectType === 'client' ? 'Client Website Case Study' : 'Self-Initiated Website Concept';
+  const description = `${projectKind} built with ${project.platform}. ${project.tagline.en}`;
+
   return {
-    title: `${project.title.en} | Case Study`,
-    description: project.overview.en,
+    title: `${project.title.en} — ${projectKind}`,
+    description,
+    alternates: {
+      canonical: `/work/${project.slug}`,
+    },
     openGraph: {
-      title: `${project.title.en} — Webflow Case Study by Ahmed`,
-      description: project.overview.en,
+      title: `${project.title.en} — ${projectKind} | Ahmed`,
+      description,
+      url: `https://ahmed-webflow.vercel.app/work/${project.slug}`,
       images: [{ url: project.image }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${project.title.en} — ${projectKind} | Ahmed`,
+      description,
+      images: [project.image],
     },
   };
 }

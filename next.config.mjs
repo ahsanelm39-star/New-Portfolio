@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ahmed-web-3.vercel.app',
+        hostname: 'ahmed-webflow.vercel.app',
       },
       {
         protocol: 'https',

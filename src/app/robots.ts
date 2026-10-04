@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://ahmed-portfolio.design/sitemap.xml',
+    sitemap: 'https://ahmed-webflow.vercel.app/sitemap.xml',
   };
 }

@@ -4,7 +4,6 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { MessageCircle, Mail, ShieldCheck, Clock, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
-import { cn } from '@/lib/utils';
 
 export default function ContactPage() {
   const { isRtl, t } = useLanguage();
@@ -87,10 +86,10 @@ export default function ContactPage() {
               <div className="pt-4 border-t border-white/5 space-y-2">
                 <div className="flex items-center gap-2 text-emerald-400 text-xs font-mono font-semibold">
                   <ShieldCheck className="w-4 h-4" />
-                  <span>COMMERCIAL CONFIDENTIALITY</span>
+                  <span>{t.contactPage.confidentialityTitle}</span>
                 </div>
                 <p className="text-[11px] text-slate-400 leading-relaxed">
-                  I respect client privacy, proprietary code, and strategic plans under strict non-disclosure. Non-disclosure agreement (NDA) signed upon request.
+                  {t.contactPage.confidentialityDesc}
                 </p>
               </div>
 

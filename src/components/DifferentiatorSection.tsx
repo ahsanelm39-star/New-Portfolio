@@ -39,7 +39,7 @@ export default function DifferentiatorSection() {
                   <Layers className="w-6 h-6" />
                 </div>
                 <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-mono text-sky-400 font-semibold">
-                  Visual Architecture
+                  {t.differentiator.leftCardBadge}
                 </span>
               </div>
 
@@ -48,7 +48,7 @@ export default function DifferentiatorSection() {
                   {t.differentiator.leftCardTitle}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400">
-                  Where speed, client autonomy, and design-to-production precision harmonize.
+                  {t.differentiator.leftCardDescription}
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function DifferentiatorSection() {
                   <Code className="w-6 h-6" />
                 </div>
                 <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-xs font-mono text-blue-400 font-semibold">
-                  Engineering Freedom
+                  {t.differentiator.rightCardBadge}
                 </span>
               </div>
 
@@ -92,7 +92,7 @@ export default function DifferentiatorSection() {
                   {t.differentiator.rightCardTitle}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400">
-                  Deploying custom JavaScript, mathematical CSS clamp, and API glue when needed.
+                  {t.differentiator.rightCardDescription}
                 </p>
               </div>
 

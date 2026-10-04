@@ -9,10 +9,12 @@ export default function ContactForm() {
   const { isRtl, t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setSubmitError('');
 
     const formData = new FormData(e.currentTarget);
 
@@ -25,14 +27,10 @@ export default function ContactForm() {
         },
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-      } else {
-        // Even if external network errors, show success to reassure user
-        setSubmitted(true);
-      }
-    } catch {
+      if (!response.ok) throw new Error('Form submission failed');
       setSubmitted(true);
+    } catch {
+      setSubmitError(t.contactPage.submitError);
     } finally {
       setLoading(false);
     }
@@ -70,11 +68,12 @@ export default function ContactForm() {
         {/* Name & Email Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-name" className="text-xs font-mono text-slate-300 block">
               {t.contactPage.nameLabel} <span className="text-sky-400">*</span>
             </label>
             <input
               type="text"
+              id="contact-name"
               name="name"
               required
               placeholder={t.contactPage.namePlaceholder}
@@ -83,11 +82,12 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-1.5">
-            <label className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-email" className="text-xs font-mono text-slate-300 block">
               {t.contactPage.formEmailLabel} <span className="text-sky-400">*</span>
             </label>
             <input
               type="email"
+              id="contact-email"
               name="email"
               required
               placeholder={t.contactPage.emailPlaceholder}
@@ -99,11 +99,12 @@ export default function ContactForm() {
         {/* Company & Phone Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-company" className="text-xs font-mono text-slate-300 block">
               {t.contactPage.companyLabel}
             </label>
             <input
               type="text"
+              id="contact-company"
               name="company"
               placeholder={t.contactPage.companyPlaceholder}
               className="w-full bg-[#08090d] border border-white/10 focus:border-sky-400 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none transition-colors"
@@ -111,11 +112,12 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-1.5">
-            <label className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-phone" className="text-xs font-mono text-slate-300 block">
               {t.contactPage.formPhoneLabel}
             </label>
             <input
               type="text"
+              id="contact-phone"
               name="phone"
               placeholder={t.contactPage.phonePlaceholder}
               className="w-full bg-[#08090d] border border-white/10 focus:border-sky-400 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none transition-colors"
@@ -125,10 +127,11 @@ export default function ContactForm() {
 
         {/* Project Type */}
         <div className="space-y-1.5">
-          <label className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-project-type" className="text-xs font-mono text-slate-300 block">
             {t.contactPage.typeLabel}
           </label>
           <select
+            id="contact-project-type"
             name="projectType"
             className="w-full bg-[#08090d] border border-white/10 focus:border-sky-400 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors"
           >
@@ -142,10 +145,11 @@ export default function ContactForm() {
 
         {/* Budget Range (Optional) */}
         <div className="space-y-1.5">
-          <label className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-budget" className="text-xs font-mono text-slate-300 block">
             {t.contactPage.budgetLabel}
           </label>
           <select
+            id="contact-budget"
             name="budget"
             className="w-full bg-[#08090d] border border-white/10 focus:border-sky-400 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors"
           >
@@ -159,10 +163,11 @@ export default function ContactForm() {
 
         {/* Message */}
         <div className="space-y-1.5">
-          <label className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-message" className="text-xs font-mono text-slate-300 block">
             {t.contactPage.messageLabel} <span className="text-sky-400">*</span>
           </label>
           <textarea
+            id="contact-message"
             name="message"
             rows={4}
             required
@@ -173,6 +178,11 @@ export default function ContactForm() {
 
         {/* Submit Button */}
         <div className="pt-2">
+          {submitError && (
+            <p role="alert" className="mb-3 text-xs text-rose-300">
+              {submitError}
+            </p>
+          )}
           <button
             type="submit"
             disabled={loading}

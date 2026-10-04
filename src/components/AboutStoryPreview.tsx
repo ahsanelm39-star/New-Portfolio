@@ -68,10 +68,6 @@ export default function AboutStoryPreview() {
                 ))}
               </div>
 
-              {/* Verified Trust Statement */}
-              <div className="pt-4 border-t border-white/5 text-[11px] font-mono text-slate-400">
-                “Grounded in real agency workflows, 16+ verified client deliveries, and no fabricated statistics.”
-              </div>
             </div>
           </div>
 

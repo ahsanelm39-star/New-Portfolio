@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { ArrowUpRight, CheckCircle2, History, Compass, ShieldCheck } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import FinalCta from '@/components/FinalCta';
 
@@ -37,10 +37,6 @@ export default function AboutPage() {
             <p>{t.aboutSection.p2}</p>
             <p className="text-slate-200 font-medium">{t.aboutSection.p3}</p>
             
-            <div className="pt-4 p-6 rounded-2xl bg-[#0c0f17] border border-white/10 text-xs sm:text-sm text-slate-400 leading-relaxed font-mono">
-              <span className="text-sky-400 font-semibold block mb-1">Authentic Credibility Standard:</span>
-              “I do not publish fabricated client quotes, fake awards, or inflated metrics. My positioning is built entirely on real projects, clean code, disciplined aesthetics, and verified commercial utility.”
-            </div>
           </div>
 
           {/* Side Dossier: Verified Track Record */}
@@ -48,33 +44,33 @@ export default function AboutPage() {
             <div className="p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6">
               <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-emerald-400" />
-                <span>Verified Snapshot</span>
+                <span>{t.aboutPage.snapshotTitle}</span>
               </h3>
 
               <div className="space-y-4 text-xs">
                 <div className="flex items-center justify-between pb-3 border-b border-white/5">
-                  <span className="text-slate-400">Experience</span>
-                  <span className="text-white font-mono font-semibold">2+ Years Active Production</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotExperience}</span>
+                  <span className="text-white font-mono font-semibold">{t.aboutPage.snapshotExperienceValue}</span>
                 </div>
                 <div className="flex items-center justify-between pb-3 border-b border-white/5">
-                  <span className="text-slate-400">Delivered Projects</span>
-                  <span className="text-sky-400 font-mono font-semibold">16+ Real Client Websites</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotProjects}</span>
+                  <span className="text-sky-400 font-mono font-semibold">{t.aboutPage.snapshotProjectsValue}</span>
                 </div>
                 <div className="flex items-center justify-between pb-3 border-b border-white/5">
-                  <span className="text-slate-400">Regional Experience</span>
-                  <span className="text-white font-mono font-semibold">Kuwait & GCC Markets</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotRegional}</span>
+                  <span className="text-white font-mono font-semibold">{t.aboutPage.snapshotRegionalValue}</span>
                 </div>
                 <div className="flex items-center justify-between pb-3 border-b border-white/5">
-                  <span className="text-slate-400">Language Fluency</span>
-                  <span className="text-white font-mono font-semibold">Bilingual Arabic & English</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotLanguages}</span>
+                  <span className="text-white font-mono font-semibold">{t.aboutPage.snapshotLanguagesValue}</span>
                 </div>
                 <div className="flex items-center justify-between pb-3 border-b border-white/5">
-                  <span className="text-slate-400">Current Specialization</span>
-                  <span className="text-sky-400 font-mono font-semibold">Webflow + Custom Code</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotSpecialization}</span>
+                  <span className="text-sky-400 font-mono font-semibold">{t.aboutPage.snapshotSpecializationValue}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Prior Agency Background</span>
-                  <span className="text-slate-300 font-mono">Kuwait Marketing Agency</span>
+                  <span className="text-slate-400">{t.aboutPage.snapshotAgencyExperience}</span>
+                  <span className="text-slate-300 font-mono">{t.aboutPage.snapshotAgencyValue}</span>
                 </div>
               </div>
             </div>
@@ -85,7 +81,7 @@ export default function AboutPage() {
         <div className="space-y-12">
           <div className="max-w-2xl space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
-              Operating Philosophy
+              {t.aboutPage.eyebrow}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               {t.aboutPage.principlesTitle}
@@ -100,7 +96,7 @@ export default function AboutPage() {
               >
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono text-sky-400 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20">
-                    Principle {principle.number}
+                    {t.aboutPage.principleLabel} {principle.number}
                   </span>
                 </div>
 

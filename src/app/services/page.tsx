@@ -124,7 +124,7 @@ export default function ServicesPage() {
                     </Link>
 
                     <span className="text-[11px] font-mono text-slate-500">
-                      Service 0{service.order}
+                      {t.servicesPage.serviceLabel} 0{service.order}
                     </span>
                   </div>
                 </div>

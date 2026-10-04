@@ -61,6 +61,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                     src={heroProject.image}
                     alt={heroProject.title[lang]}
                     fill
+                    sizes="(max-width: 1023px) 100vw, 58vw"
                     className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f17] via-transparent to-black/20 lg:hidden"></div>
@@ -95,7 +96,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                     {/* Architectural Highlights */}
                     <div className="pt-2 space-y-2">
                       <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-                        Key Architectural Highlights:
+                        {t.workSection.highlightLabel}
                       </div>
                       <ul className="space-y-1.5 text-xs text-slate-300">
                         {heroProject.designDecisions[lang].slice(0, 2).map((item, idx) => (
@@ -120,7 +121,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
 
                     {heroProject.liveUrl && (
                       <a
-                        href={'https://alawad-arch.com/'}
+                        href={heroProject.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-xs font-medium px-4 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition-all"
@@ -151,6 +152,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                       src={project.image}
                       alt={project.title[lang]}
                       fill
+                      sizes="(max-width: 767px) 100vw, 50vw"
                       className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                     />
 

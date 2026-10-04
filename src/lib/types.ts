@@ -26,6 +26,7 @@ export interface ProjectStat {
 
 export interface Project {
   slug: string;
+  projectType: 'client' | 'concept';
   featured: boolean;
   order: number;
   title: LocalizedString;
@@ -33,7 +34,7 @@ export interface Project {
   industry: LocalizedString;
   category: ProjectCategory;
   location: LocalizedString;
-  platform: 'Webflow' | 'Webflow + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
+  platform: 'Webflow' | 'Webflow + Custom CSS' | 'Webflow + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
   platformContextNote?: LocalizedString;
   role: LocalizedString;
   languages: LocalizedString;
