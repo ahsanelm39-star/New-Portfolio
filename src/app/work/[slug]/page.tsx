@@ -20,8 +20,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const project = PROJECTS.find((p) => p.slug === params.slug);
   if (!project) return {};
 
-  const projectKind = project.projectType === 'client' ? 'Client Website Case Study' : 'Self-Initiated Website Concept';
-  const description = `${projectKind} built with ${project.platform}. ${project.tagline.en}`;
+  const projectKind = project.projectType === 'client' ? 'Client Website Case Study' : 'Front-End Website Concept';
+  const description = `${project.title.en} — ${projectKind}. ${project.tagline.en}`;
 
   return {
     title: `${project.title.en} — ${projectKind}`,
@@ -32,7 +32,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     openGraph: {
       title: `${project.title.en} — ${projectKind} | Ahmed`,
       description,
-      url: `https://ahmed-webflow.vercel.app/work/${project.slug}`,
+      url: `https://ahmed-web1.vercel.app/work/${project.slug}`,
       images: [{ url: project.image }],
     },
     twitter: {

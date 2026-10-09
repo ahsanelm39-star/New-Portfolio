@@ -65,17 +65,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                     className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f17] via-transparent to-black/20 lg:hidden"></div>
-                  
-                  {/* Platform & Location Badge Floating */}
-                  <div className="absolute top-4 start-4 flex flex-wrap items-center gap-2">
-                    <span className="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/10 text-xs font-mono text-sky-400">
-                      {heroProject.platform}
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/10 text-xs font-mono text-slate-300">
-                      {heroProject.location[lang]}
-                    </span>
                   </div>
-                </div>
 
                 {/* Narrative & Case Intelligence (5 cols) */}
                 <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
@@ -156,16 +146,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                       className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                     />
 
-                    {/* Floating Badges */}
-                    <div className="absolute top-4 start-4 flex flex-wrap items-center gap-2">
-                      <span className="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/10 text-[11px] font-mono text-sky-400">
-                        {project.platform}
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/10 text-[11px] font-mono text-slate-300">
-                        {project.location[lang]}
-                      </span>
                     </div>
-                  </div>
 
                   {/* Project Intelligence */}
                   <div className="p-6 sm:p-8 space-y-3">

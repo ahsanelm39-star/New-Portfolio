@@ -8,7 +8,7 @@ import { ArrowUpRight, Sparkles, Layers, Code, CheckCircle, ShieldCheck } from '
 import { cn } from '@/lib/utils';
 
 export default function Hero() {
-  const { isRtl, t } = useLanguage();
+  const { isRtl, t, lang } = useLanguage();
 
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden border-b border-white/10 bg-grid-fine">
@@ -74,7 +74,7 @@ export default function Hero() {
         </div>
         <div className='max-md:mt-6'>
           <Image src={'/images/ahmed.png'} alt='Ahmed, independent Webflow developer' width={500} height={400}
-          className='rounded-md'/>
+          className='rounded-3xl'/>
         </div>
     </div>
 
@@ -97,7 +97,7 @@ export default function Hero() {
               
               <div className="flex items-center gap-3 text-[11px] font-mono text-sky-400">
                 <span className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-sky-400/10 border border-sky-400/20">
-                  <Layers className="w-3 h-3" /> Webflow + Custom CSS
+                  <Layers className="w-3 h-3" /> {lang === 'ar' ? 'موقع تجاري مباشر' : 'Live Commercial Build'}
                 </span>
                 <span className="px-2 py-0.5 rounded bg-white/5 text-slate-300">
                   Arabic RTL & English LTR
@@ -153,17 +153,8 @@ export default function Hero() {
           </div>
 
           {/* Floating Peripheral Spec Badges (Layered Depth) */}
-          <div className="hidden lg:flex absolute -top-8 -right-6 glass-panel p-4 rounded-2xl shadow-xl shadow-black/80 flex-col gap-1 max-w-[210px] animate-float">
-            <div className="flex items-center gap-2 text-xs font-bold text-white">
-              <Code className="w-4 h-4 text-sky-400" />
-              <span>{t.hero.customCodeBadge}</span>
-            </div>
-            <p className="text-[11px] text-slate-400 leading-tight">
-              {t.hero.customCodeDescription}
-            </p>
-          </div>
 
-          <div className="hidden lg:flex absolute -bottom-6 -left-6 glass-panel p-4 rounded-2xl shadow-xl shadow-black/80 items-center gap-3 animate-float [animation-delay:2s]">
+          <div className="hidden lg:flex absolute -top-8 -right-6 glass-panel p-4 rounded-2xl shadow-xl shadow-black/80 items-center gap-3 animate-float [animation-delay:2s]">
             <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center text-sky-400">
               <ShieldCheck className="w-5 h-5" />
             </div>
@@ -175,10 +166,10 @@ export default function Hero() {
 
         </div>
 
-        {/* Metric Intelligence Strip */}
+        {/* status */}
         <div className="md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-10 md:border-t border-white/10">
           <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-            <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+            <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.projectsValue}
             </div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
@@ -187,7 +178,7 @@ export default function Hero() {
           </div>
 
           <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-            <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+            <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.expValue}
             </div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
@@ -196,7 +187,7 @@ export default function Hero() {
           </div>
 
           <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-            <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+            <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.customCodeValue}
             </div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
@@ -204,7 +195,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-            <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+            <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
               {t.hero.metrics.gccValue}
             </div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">

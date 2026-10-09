@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
-const title = 'About Ahmed | Independent Webflow Developer';
-const description = 'Website development experience, Webflow specialization, custom code and agency workflow experience for projects in Kuwait and the GCC.';
+const title = 'About Ahmed | Webflow & GoHighLevel Website Developer';
+const description = 'Professional website development in Webflow and GoHighLevel, custom code, and agency delivery experience across Kuwait and the GCC.';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/about' },
   openGraph: {
     type: 'website',
-    url: 'https://ahmed-webflow.vercel.app/about',
-    siteName: 'Ahmed — Webflow Developer',
+    url: 'https://ahmed-web1.vercel.app/about',
+    siteName: 'Ahmed — Webflow & GoHighLevel Developer',
     title,
     description,
     images: ['/images/ahmed.png'],

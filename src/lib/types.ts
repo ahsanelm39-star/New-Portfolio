@@ -36,6 +36,7 @@ export interface Project {
   location: LocalizedString;
   platform: 'Webflow' | 'Webflow + Custom CSS' | 'Webflow + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
   platformContextNote?: LocalizedString;
+  deliveryScope?: LocalizedString;
   role: LocalizedString;
   languages: LocalizedString;
   image: string;

@@ -44,10 +44,6 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
             <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-mono text-sky-400">
               {project.industry[lang]}
             </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300">
-              <Layers className="w-3.5 h-3.5 text-sky-400" />
-              <span>{project.projectType === 'client' ? t.caseStudy.clientProject : t.caseStudy.conceptProject}</span>
-            </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
@@ -90,7 +86,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               {t.caseStudy.platformLabel}
             </span>
             <span className="font-semibold text-sky-400 block font-mono">
-              {project.platform}
+              {project.deliveryScope ? project.deliveryScope[lang] : (project.projectType === 'client' ? (lang === 'ar' ? 'تنفيذ لصالح وكالة تسويق' : 'White-Label Agency Delivery') : (lang === 'ar' ? 'نموذج واجهات مستقل' : 'Independent Front-End Concept'))}
             </span>
           </div>
 
@@ -122,7 +118,9 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
               <span className="ms-2 text-slate-400 hidden sm:inline">{project.liveUrl}</span>
             </div>
-            <span className="text-sky-400">{project.platform}</span>
+            <span className="text-sky-400">
+              {project.projectType === 'client' ? (lang === 'ar' ? 'موقع مباشر قيد التشغيل' : 'Live Production Site') : (lang === 'ar' ? 'نموذج واجهة تفاعلية' : 'Interactive Prototype')}
+            </span>
           </div>
 
           <div className="relative aspect-[16/10] w-full bg-[#0a0d14]">

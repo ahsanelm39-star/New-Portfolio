@@ -1,6 +1,6 @@
-# Ahmed — High-End Webflow Specialist & Digital Designer Portfolio
+# Ahmed — Webflow & GoHighLevel Website Developer Portfolio
 
-A high-end, art-directed personal brand website for **Ahmed**, a professional Webflow Specialist and Web Designer with custom-code capability and extensive GCC business experience.
+A professional portfolio website for **Ahmed**, a Webflow & GoHighLevel Website Developer with custom HTML/CSS/JS capability and extensive Kuwait & GCC agency experience.
 
 Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and genuine bidirectional (Arabic RTL & English LTR) layout architecture.
 
@@ -8,10 +8,10 @@ Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and genuine bidire
 
 ## 🌟 Positioning & Brand Architecture
 
-- **Primary Specialization**: Webflow Specialist / Webflow Designer & Developer
-- **Technical Differentiator**: HTML5 / CSS3 / Modern JavaScript / Custom Code capability
-- **Regional Specialization**: Kuwait & GCC Commercial Market (16+ verified client projects)
-- **Authentic Background**: Prior hands-on production experience behind the scenes for a Kuwait-based digital marketing company (GoHighLevel, agency fulfillment workflows)
+- **Primary Specialization**: Webflow & GoHighLevel Website Developer
+- **Technical Differentiator**: Custom HTML, CSS & JavaScript capability
+- **Regional Specialization**: Kuwait & GCC Commercial Market (30+ website projects)
+- **Authentic Background**: Prior hands-on production experience behind the scenes for a Kuwait-based marketing agency (white-label delivery, agency fulfillment workflows)
 
 ---
 

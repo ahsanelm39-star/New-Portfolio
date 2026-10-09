@@ -104,15 +104,6 @@ export default function WorkPage() {
                     className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
-                  {/* Floating Metadata Pills */}
-                  <div className="absolute top-4 start-4 flex flex-wrap items-center gap-2">
-                    <span className="px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-sky-400 font-semibold">
-                      {project.platform}
-                    </span>
-                    <span className="px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-slate-300">
-                      {project.location[lang]}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Case Intelligence Content */}
