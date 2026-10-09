@@ -136,7 +136,7 @@ export default function WorkPage() {
               </div>
 
               {/* Card Action Controls */}
-              <div className="p-6 pt-0 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
+              <div className="p-6 pt-4 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
                 <Link
                   href={`/work/${project.slug}`}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300 transition-colors"
