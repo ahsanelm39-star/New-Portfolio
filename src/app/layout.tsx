@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       'Webflow & GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
     images: [
       {
-        url: '/images/projects/alawad.png',
+        url: '/images/ahmed.png',
         width: 1200,
         height: 630,
         alt: 'Al Awad client website implementation by Ahmed',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: 'Ahmed | Webflow & GoHighLevel Website Developer | Kuwait & GCC',
     description:
       'Webflow & GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
-    images: ['/images/projects/alawad.png'],
+    images: ['/images/ahmed.png'],
   },
   icons: {
     icon: '/favicon.ico',
