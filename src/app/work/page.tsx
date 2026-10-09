@@ -43,7 +43,7 @@ export default function WorkPage() {
   ].filter((group) => group.projects.length > 0);
 
   return (
-    <div className="pt-32 pb-24 sm:pt-44 sm:pb-32 bg-[#07080a] min-h-screen">
+    <div className="pt-32 pb-24 sm:pt-44 bg-[#07080a] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Hero Header */}
@@ -165,10 +165,10 @@ export default function WorkPage() {
         ))}
 
         {/* Platform Transparency Notice */}
-        <div className="mt-16 p-6 rounded-2xl bg-white/[0.02] border border-white/10 text-xs text-slate-400 text-center font-mono">
+        {/* <div className="mt-16 p-6 rounded-2xl bg-white/[0.02] border border-white/10 text-xs text-slate-400 text-center font-mono">
           <p>{t.workPage.platformHonestyNotice}</p>
           <p className="mt-2">{t.workPage.screenshotDisclosure}</p>
-        </div>
+        </div> */}
 
       </div>
     </div>
