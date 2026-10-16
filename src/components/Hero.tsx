@@ -25,12 +25,6 @@ export default function Hero() {
                     <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
                     <span>{t.hero.badge}</span>
                   </div>
-
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                    <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
-                    <span className="sm:hidden">{t.hero.statusAvailable}</span>
-                  </div>
                 </div>
 
                 {/* Main Display Headline */}
@@ -73,11 +67,15 @@ export default function Hero() {
                 </div>
         </div>
         <div className='max-md:mt-6'>
-          <Image src={'/images/ahmed.png'} alt='Ahmed, independent Webflow developer' width={500} height={400}
-          className='rounded-3xl'/>
+            <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
+              <span className="sm:hidden">{t.hero.statusAvailable}</span>
+            </div>
+          <Image src={'/images/ahmed-web.jpg'} alt='Ahmed, independent Webflow developer' width={500} height={400}
+        className='rounded-2xl'/>
         </div>
     </div>
-
         {/* Cinematic Visual Centerpiece: Floating Layered Architecture Mockup */}
         <div className="mt-14 lg:mt-20 relative max-md:hidden">
           

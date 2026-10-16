@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { MessageCircle, Mail, ShieldCheck, Clock, CheckCircle } from 'lucide-react';
+import { MessageCircle, Mail, ShieldCheck, Clock, CheckCircle, Linkedin } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 
 export default function ContactPage() {
@@ -77,6 +77,22 @@ export default function ContactPage() {
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-sky-400 transition-colors truncate block">
                       ah.dev.3@gmail.com
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="mailto:ah.dev.3@gmail.com"
+                  className="p-4 rounded-2xl bg-white/[0.03] hover:bg-sky-950/20 border border-white/5 hover:border-sky-500/40 transition-all flex items-center gap-4 group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-sky-500/10 text-[#0A66C2] flex items-center justify-center shrink-0">
+                    <Linkedin className="w-6 h-6" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
+                      LinkedIn account
+                    </span>
+                    <span className="text-sm font-bold text-white group-hover:text-sky-400 transition-colors truncate block">
+                      Ahmed Mohamed
                     </span>
                   </div>
                 </a>

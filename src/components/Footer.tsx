@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { ArrowUpRight, MessageCircle, Mail } from 'lucide-react';
+import { ArrowUpRight, MessageCircle, Mail, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Footer() {
@@ -125,6 +125,18 @@ export default function Footer() {
                   <ArrowUpRight className={cn('w-3 h-3 text-slate-500 group-hover:text-sky-400', isRtl && 'rotate-90')} />
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ahmed-mohame-843909439"
+                  target="_blank"
+                  className="inline-flex items-center gap-1.5 hover:text-sky-400 transition-colors group"
+                >
+                  <Linkedin className="w-3.5 h-3.5 text-[#0A66C2]" />
+                  <span>LinkedIn</span>
+                  <ArrowUpRight className={cn('w-3 h-3 text-slate-500 group-hover:text-sky-400', isRtl && 'rotate-90')} />
+                </a>
+              </li>
+              
             </ul>
           </div>
 
