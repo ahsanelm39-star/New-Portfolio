@@ -81,7 +81,7 @@ export default function ContactPage() {
                   </div>
                 </a>
                 <a
-                  href="mailto:ah.dev.3@gmail.com"
+                  href="https://www.linkedin.com/in/ahmed-mohame-843909439/" target="_blank"
                   className="p-4 rounded-2xl bg-white/[0.03] hover:bg-sky-950/20 border border-white/5 hover:border-sky-500/40 transition-all flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-sky-500/10 text-[#0A66C2] flex items-center justify-center shrink-0">
