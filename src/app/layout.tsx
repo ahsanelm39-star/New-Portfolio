@@ -36,22 +36,24 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://ahmed-web1.vercel.app'),
   title: {
-    default: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
+    default: 'Ahmed | GoHighLevel Website Developer | GCC Agencies',
     template: '%s | Ahmed —  GHL Developer',
   },
   description:
-    'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
+    'GoHighLevel Website Developer for agencies, studios, and marketing teams across the GCC. I build responsive, business-focused websites with strong visual direction, purposeful layouts, carefully selected content and imagery, custom HTML/CSS/JavaScript, and Arabic RTL support.',
   keywords: [
-    'Webflow Developer',
     'GoHighLevel Website Developer',
     'GHL Website Developer',
-    'Webflow Development',
-    'Figma to Webflow',
-    'Figma to GoHighLevel',
-    'Webflow Developer Kuwait',
-    'Webflow Developer GCC',
-    'Arabic RTL Webflow',
-    'Custom Front-End Developer',
+    'GoHighLevel Developer GCC',
+    'GHL Developer for Agencies',
+    'GoHighLevel Website Development',
+    'GoHighLevel Developer Gulf',
+    'GoHighLevel Websites for GCC Agencies',
+    'GoHighLevel Landing Page Developer',
+    'Arabic RTL GoHighLevel Websites',
+    'Custom HTML CSS JavaScript for GoHighLevel',
+    'Responsive GoHighLevel Websites',
+    'Ahmed Mohamed GoHighLevel Developer',
     'Ahmed Portfolio',
   ],
   authors: [{ name: 'Ahmed' }],
@@ -66,9 +68,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://ahmed-web1.vercel.app/',
     siteName: 'Ahmed — GoHighLevel Developer',
-    title: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
+    title: 'Ahmed | GoHighLevel Website Developer | GCC Agencies',
     description:
-      'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
+      'GoHighLevel website developer for agencies, studios, and marketing teams in GCC Agencies. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
     images: [
       {
         url: '/images/ahmed-web.jpg',
@@ -82,7 +84,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ahmed | GoHighLevel Website Developer | GCC Agencies',
     description:
-      'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
+      'GoHighLevel website developer for agencies, studios, and marketing teams in GCC Agencies. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
     images: ['/images/ahmed-web.jpg'],
   },
   icons: {
