@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
+    title: 'Ahmed | GoHighLevel Website Developer | GCC Agencies',
     description:
       'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
     images: ['/images/ahmed-web.jpg'],

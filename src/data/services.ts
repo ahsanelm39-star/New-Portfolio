@@ -170,8 +170,8 @@ export const SERVICES: ServiceItem[] = [
       ar: 'تنفيذ العربية RTL والإنجليزية LTR',
     },
     subtitle: {
-      en: 'Direction-aware website implementation tailored for Kuwait and GCC markets.',
-      ar: 'تنفيذ مواقع يراعي اتجاه المحتوى بدقة لأسواق الكويت والخليج.',
+      en: 'Direction-aware website implementation tailored for GCC markets.',
+      ar: 'تنفيذ مواقع يراعي اتجاه المحتوى بدقة لأسواق الخليج.',
     },
     description: {
       en: 'I implement Arabic right-to-left and English left-to-right pages with careful attention to layout direction, typographic scale, reading hierarchy, and responsive symmetry for regional businesses.',
@@ -192,8 +192,8 @@ export const SERVICES: ServiceItem[] = [
       ],
     },
     idealFor: {
-      en: 'Agencies and companies preparing Arabic and English websites for Kuwait and the wider GCC business market.',
-      ar: 'الوكالات والشركات التي تبني مواقع عربية وإنجليزية للكويت والأسواق الخليجية.',
+      en: 'Agencies and companies preparing Arabic and English websites for the wider GCC business market.',
+      ar: 'الوكالات والشركات التي تبني مواقع عربية وإنجليزية للأسواق الخليجية.',
     },
     badge: {
       en: 'Arabic & GCC',
