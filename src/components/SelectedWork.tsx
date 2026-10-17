@@ -30,7 +30,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
             <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.workSection.eyebrow}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-extrabold text-white leading-normal sm:leading-normal lg:leading-snug ">
               {t.workSection.headline}
             </h2>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed">

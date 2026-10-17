@@ -26,7 +26,7 @@ export default function SpecializationMatrix() {
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.specialization.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight lg:leading-snug">
             {t.specialization.headline}
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">

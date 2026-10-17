@@ -36,11 +36,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://ahmed-web1.vercel.app'),
   title: {
-    default: 'Ahmed | Webflow & GoHighLevel Website Developer | Kuwait & GCC',
-    template: '%s | Ahmed — Webflow & GHL Developer',
+    default: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
+    template: '%s | Ahmed —  GHL Developer',
   },
   description:
-    'Webflow & GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
+    'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
   keywords: [
     'Webflow Developer',
     'GoHighLevel Website Developer',
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://ahmed-web1.vercel.app/',
-    siteName: 'Ahmed — Webflow & GoHighLevel Developer',
-    title: 'Ahmed | Webflow & GoHighLevel Website Developer | Kuwait & GCC',
+    siteName: 'Ahmed — GoHighLevel Developer',
+    title: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
     description:
-      'Webflow & GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
+      'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom HTML/CSS/JavaScript, and Arabic RTL.',
     images: [
       {
-        url: '/images/ahmed.png',
+        url: '/images/ahmed-web.jpg',
         width: 1200,
         height: 630,
         alt: 'Al Awad client website implementation by Ahmed',
@@ -80,10 +80,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ahmed | Webflow & GoHighLevel Website Developer | Kuwait & GCC',
+    title: 'Ahmed | GoHighLevel Website Developer | Kuwait & GCC',
     description:
-      'Webflow & GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
-    images: ['/images/ahmed.png'],
+      'GoHighLevel website developer for agencies, studios, and marketing teams in Kuwait and the GCC. Figma and Adobe XD implementation, custom code, and Arabic RTL.',
+    images: ['/images/ahmed-web.jpg'],
   },
   icons: {
     icon: '/favicon.ico',

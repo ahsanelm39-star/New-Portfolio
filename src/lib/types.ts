@@ -34,7 +34,7 @@ export interface Project {
   industry: LocalizedString;
   category: ProjectCategory;
   location: LocalizedString;
-  platform: 'Webflow' | 'Webflow + Custom CSS' | 'Webflow + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
+  platform: 'GoHighLevel' | 'GoHighLevel + Custom CSS' | 'GoHighLevel + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
   platformContextNote?: LocalizedString;
   deliveryScope?: LocalizedString;
   role: LocalizedString;

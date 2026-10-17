@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
-const title = 'About Ahmed | Webflow & GoHighLevel Website Developer';
-const description = 'Professional website development in Webflow and GoHighLevel, custom code, and agency delivery experience across Kuwait and the GCC.';
+const title = 'About Ahmed | GoHighLevel Website Developer';
+const description = 'Professional website development in GoHighLevel, custom code, and agency delivery experience across GCC.';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://ahmed-web1.vercel.app/about',
-    siteName: 'Ahmed — Webflow & GoHighLevel Developer',
+    siteName: 'Ahmed — GoHighLevel Developer',
     title,
     description,
-    images: ['/images/ahmed.png'],
+    images: ['/images/ahmed-web.jpg'],
   },
-  twitter: { card: 'summary_large_image', title, description, images: ['/images/ahmed.png'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/images/ahmed-web.jpg'] },
 };
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {

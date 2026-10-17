@@ -20,7 +20,7 @@ export default function DifferentiatorSection() {
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.differentiator.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight lg:leading-snug">
             {t.differentiator.headline}
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -123,7 +123,7 @@ export default function DifferentiatorSection() {
 
         {/* Central Manifesto Quote Banner */}
         <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-sky-500/10 via-blue-500/5 to-transparent border border-sky-400/20 text-center relative overflow-hidden">
-          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-tight leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-tight leading-relaxed max-w-4xl mx-auto sm:leading-normal">
             {t.differentiator.quote}
           </p>
         </div>

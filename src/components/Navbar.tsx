@@ -51,7 +51,7 @@ export default function Navbar() {
       className={cn(
         'fixed top-0 inset-x-0 z-50 transition-all duration-300',
         scrolled
-          ? 'bg-[#07080a]/85 backdrop-blur-md border-b border-white/10 py-3.5 shadow-lg shadow-black/40'
+          ? 'bg-[#07080a]/95 border-b border-white/10 py-3.5 shadow-lg shadow-black/40'
           : 'bg-transparent py-5'
       )}
     >
@@ -62,7 +62,7 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-3 group focus:outline-none"
-            aria-label="Ahmed — Webflow Specialist Home"
+            aria-label="Ahmed — GoHighLevel Specialist Home"
           >
             <div className="relative w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-400 via-blue-500 to-indigo-600 p-[1px] shadow-sm shadow-sky-500/20 group-hover:shadow-sky-400/40 transition-shadow">
               <div className="w-full h-full bg-[#08090d] rounded-[11px] flex items-center justify-center font-bold text-sky-400 group-hover:text-white transition-colors text-sm">
@@ -73,8 +73,11 @@ export default function Navbar() {
               <span className="font-extrabold tracking-tight text-white text-base sm:text-lg flex items-center gap-1">
                 AHMED<span className="text-sky-400">.</span>
               </span>
-              <span className="text-[10px] tracking-wider text-slate-400 font-mono hidden sm:inline-block">
+              <span className="text-[11px] tracking-wider text-slate-400 font-mono hidden sm:inline-block">
                 {t.nav.whiteLabelBadge}
+              </span>
+              <span className="max-sm:text-[10px] max-sm:tracking-wider max-sm:text-slate-400 max-sm:font-mono max-sm:inline-block sm:hidden">
+                GoHighLevel Developer
               </span>
             </div>
           </Link>
@@ -88,7 +91,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200',
+                    'px-3.5 py-1.5 rounded-full text-[14px] font-medium transition-all duration-200',
                     active
                       ? 'bg-sky-400/15 text-sky-300 border border-sky-400/30 shadow-sm'
                       : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -105,22 +108,24 @@ export default function Navbar() {
             {/* Language Switcher */}
             <button
               onClick={toggleLang}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-medium text-slate-300 hover:text-white transition-all focus:outline-none"
+              className="mx-1 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-medium text-slate-300 hover:text-white transition-all focus:outline-none"
               title={lang === 'en' ? 'التحويل إلى اللغة العربية' : 'Switch to English'}
               aria-label="Switch Language"
             >
               <Globe className="w-3.5 h-3.5 text-sky-400" />
-              <span>{t.nav.languageLabel}</span>
+              <span className='text-sm'> {t.nav.languageLabel}</span>
             </button>
 
             {/* CTA Button */}
-            <Link
+            <div className=''>
+              <Link
               href="/contact"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-300 hover:to-blue-500 text-slate-950 font-medium transition-all shadow-md shadow-sky-500/20 hover:shadow-sky-400/30 hover:scale-[1.02] active:scale-[0.98]"
+              className="max-lg:hidden inline-flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-300 hover:to-blue-500 text-slate-950 font-medium transition-all shadow-md shadow-sky-500/20 hover:shadow-sky-400/30 hover:scale-[1.02] active:scale-[0.98] "
             >
               <span>{t.nav.cta}</span>
               <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />
             </Link>
+            </div>
           </div>
 
           {/* Mobile Right Controls: Language toggle + Hamburger */}
@@ -147,7 +152,7 @@ export default function Navbar() {
       {/* Mobile Drawer Backdrop */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm transition-opacity md:hidden"
+          className="fixed inset-0 z-150 bg-black/80 backdrop-blur-sm transition-opacity md:hidden"
           onClick={() => setMobileMenuOpen(false)}
           aria-hidden="true"
         />
@@ -158,8 +163,8 @@ export default function Navbar() {
         className={cn(
           'fixed top-0 bottom-0 z-50 w-[85%] max-w-sm bg-[#090c12] border-white/10 p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out md:hidden',
           isRtl
-            ? 'left-0 border-r ' + (mobileMenuOpen ? 'translate-x-0' : '-translate-x-full')
-            : 'right-0 border-l ' + (mobileMenuOpen ? 'translate-x-0' : 'translate-x-full')
+            ? 'left-0 border-r ' + (mobileMenuOpen ? 'translate-x-0 bg-[#090c12] ' : '-translate-x-full bg-[#090c12]')
+            : 'right-0 border-l ' + (mobileMenuOpen ? 'translate-x-0 bg-[#090c12]' : 'translate-x-full bg-[#090c12]')
         )}
       >
         <div>

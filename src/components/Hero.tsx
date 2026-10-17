@@ -28,7 +28,7 @@ export default function Hero() {
 
                     {/* Main Display Headline */}
                     <div className="max-w-4xl space-y-6">
-                      <h1 className="text-4xl sm:text-5xl  lg:text-6xl font-extrabold text-white tracking-tight leading-[1.08] text-balance">
+                      <h1 className="text-4xl sm:text-5xl  lg:text-6xl font-extrabold text-white tracking-tight text-balance lg:leading-tight md:leading-tight max-sm:leading-tight">
                         <span>{t.hero.headlineStart} </span>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-blue-500">
                           {t.hero.headlineAccent}
@@ -60,7 +60,7 @@ export default function Hero() {
                     </div>
 
                     {/* Subordinate Credibility Pill */}
-                    <div className="mt-6 text-xs text-slate-400 font-mono tracking-wider flex items-center gap-2">
+                    <div className="mt-6 text-xs text-slate-400 font-mono tracking-wider flex items-center gap-2 leading-loose">
                       <span className="w-1.5 h-1.5 rounded-full bg-sky-400/70"></span>
                       <span>{t.hero.credibilityLine}</span>
                     </div>
@@ -71,7 +71,7 @@ export default function Hero() {
                   <span className="hidden sm:inline">{t.hero.statusAvailable}</span>
                   <span className="sm:hidden">{t.hero.statusAvailable}</span>
                 </div>
-              <Image src={'/images/ahmed-web.jpg'} alt='Ahmed, independent Webflow developer' width={650} height={600}
+              <Image src={'/images/ahmed-web.jpg'} alt='Ahmed, independent GoHighLevel developer' width={650} height={600}
             className='rounded-2xl'/>
             </div>
           </div>
@@ -163,12 +163,12 @@ export default function Hero() {
 
           </div>
           {/* status */}
-          <div className="md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-10 md:border-t border-white/10">
+          <div className="md:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 pt-10 md:border-t border-white/10">
             <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
               <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.projectsValue}
               </div>
-              <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
+              <div className="text-sm sm:text-lg text-slate-400 mt-2 font-medium">
                 {t.hero.metrics.projectsLabel}
               </div>
             </div>
@@ -177,24 +177,24 @@ export default function Hero() {
               <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.expValue}
               </div>
-              <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
+              <div className="text-sm sm:text-lg text-slate-400 mt-2 font-medium">
                 {t.hero.metrics.expLabel}
               </div>
             </div>
 
             <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+              <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.customCodeValue}
               </div>
-              <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
+              <div className="text-sm sm:text-lg text-slate-400 mt-2 font-medium">
                 {t.hero.metrics.customCodeLabel}
               </div>
             </div>
             <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+              <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.gccValue}
               </div>
-              <div className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
+              <div className="text-sm sm:text-lg text-slate-400 mt-2 font-medium">
                 {t.hero.metrics.gccLabel}
               </div>
             </div>

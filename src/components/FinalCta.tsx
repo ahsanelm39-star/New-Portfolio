@@ -23,7 +23,7 @@ export default function FinalCta() {
         </div>
 
         {/* Dramatic Oversized Display Headline */}
-        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] text-balance">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight  text-balance lg:leading-tight max-lg:leading-tight">
           <span>{t.finalCta.headlineStart} </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-blue-500">
             {t.finalCta.headlineAccent}

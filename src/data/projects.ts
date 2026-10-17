@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
       en: 'Kuwait',
       ar: 'الكويت',
     },
-    platform: 'Webflow + Custom CSS',
+    platform: 'GoHighLevel + Custom CSS',
     deliveryScope: {
       en: 'White-Label Agency Delivery',
       ar: 'تنفيذ لصالح وكالة تسويق (White-Label)',
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
       en: 'Kuwait',
       ar: 'الكويت',
     },
-    platform: 'Webflow',
+    platform: 'GoHighLevel',
     deliveryScope: {
       en: 'White-Label Agency Delivery',
       ar: 'تنفيذ لصالح وكالة تسويق (White-Label)',
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
       en: 'Kuwait',
       ar: 'الكويت',
     },
-    platform: 'Webflow + Custom CSS',
+    platform: 'GoHighLevel + Custom CSS',
     deliveryScope: {
       en: 'White-Label Agency Delivery',
       ar: 'تنفيذ لصالح وكالة تسويق (White-Label)',
@@ -305,7 +305,7 @@ export const PROJECTS: Project[] = [
       en: 'Kuwait',
       ar: 'الكويت',
     },
-    platform: 'Webflow',
+    platform: 'GoHighLevel',
     deliveryScope: {
       en: 'White-Label Agency Delivery',
       ar: 'تنفيذ لصالح وكالة تسويق (White-Label)',
@@ -399,7 +399,7 @@ export const PROJECTS: Project[] = [
       en: 'Kuwait',
       ar: 'الكويت',
     },
-    platform: 'Webflow',
+    platform: 'GoHighLevel',
     deliveryScope: {
       en: 'White-Label Agency Delivery',
       ar: 'تنفيذ لصالح وكالة تسويق (White-Label)',

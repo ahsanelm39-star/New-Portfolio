@@ -34,10 +34,10 @@ export default function ContactPage() {
             {/* Direct Channels Card */}
             <div className="p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6">
               <div>
-                <h3 className="text-xl font-bold text-white tracking-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight">
                   {t.contactPage.directChannelsTitle}
                 </h3>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-sm md:text-[15px] mt-2 text-slate-400 mt-1">
                   {t.contactPage.directChannelsDesc}
                 </p>
               </div>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                     <MessageCircle className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[12px] mb-1 font-mono text-slate-500 uppercase tracking-wider block">
                       {t.contactPage.whatsappDirectLabel}
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors font-mono">
@@ -72,7 +72,7 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div className="overflow-hidden">
-                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[12px] mb-1 font-mono text-slate-500 uppercase tracking-wider block">
                       {t.contactPage.emailDirectLabel}
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-sky-400 transition-colors truncate block">
@@ -80,7 +80,9 @@ export default function ContactPage() {
                     </span>
                   </div>
                 </a>
+                {/* LinkIn Direct */}
                 <a
+
                   href="https://www.linkedin.com/in/ahmed-mohame-843909439/" target="_blank"
                   className="p-4 rounded-2xl bg-white/[0.03] hover:bg-sky-950/20 border border-white/5 hover:border-sky-500/40 transition-all flex items-center gap-4 group"
                 >
@@ -88,7 +90,7 @@ export default function ContactPage() {
                     <Linkedin className="w-6 h-6" />
                   </div>
                   <div className="overflow-hidden">
-                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[12px] mb-1 font-mono text-slate-500 uppercase tracking-wider block">
                       LinkedIn account
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-sky-400 transition-colors truncate block">
@@ -100,11 +102,11 @@ export default function ContactPage() {
 
               {/* Strict NDA / Confidentiality Guarantee */}
               <div className="pt-4 border-t border-white/5 space-y-2">
-                <div className="flex items-center gap-2 text-emerald-400 text-xs font-mono font-semibold">
+                <div className="flex items-center gap-2 text-emerald-400 text-md font-mono font-semibold">
                   <ShieldCheck className="w-4 h-4" />
                   <span>{t.contactPage.confidentialityTitle}</span>
                 </div>
-                <p className="text-[11px] text-slate-400 leading-relaxed">
+                <p className="text-[14px] text-slate-400 leading-relaxed">
                   {t.contactPage.confidentialityDesc}
                 </p>
               </div>
@@ -115,9 +117,9 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-sky-950/20 border border-sky-400/20 text-xs text-sky-200 space-y-2">
               <div className="flex items-center gap-2 font-mono font-bold text-sky-400">
                 <Clock className="w-4 h-4" />
-                <span>{t.contactPage.availabilityTitle}</span>
+                <span className='text-[16px]'> {t.contactPage.availabilityTitle}</span>
               </div>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-[14px]">
                 {t.contactPage.availabilityDesc}
               </p>
             </div>

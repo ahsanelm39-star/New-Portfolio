@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://ahmed-web1.vercel.app/work',
-    siteName: 'Ahmed — Webflow & GoHighLevel Developer',
+    siteName: 'Ahmed — GoHighLevel Developer',
     title,
     description,
-    images: ['/images/projects/alawad.png'],
+    images: ['/images/ahmed-web.jpg'],
   },
-  twitter: { card: 'summary_large_image', title, description, images: ['/images/projects/alawad.png'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/images/ahmed-web.jpg'] },
 };
 
 export default function WorkLayout({ children }: { children: React.ReactNode }) {

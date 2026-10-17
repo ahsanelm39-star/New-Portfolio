@@ -8,17 +8,17 @@ export const TRANSLATIONS = {
       about: 'About',
       contact: 'Contact',
       cta: 'Start a Project',
-      whiteLabelBadge: 'Webflow & GoHighLevel Developer • Agency Partner',
+      whiteLabelBadge: 'GoHighLevel Developer • Agency Partner',
       languageLabel: 'العربية',
     },
 
     // Hero Section
     hero: {
-      badge: 'Webflow & GoHighLevel Website Developer',
+      badge: 'GoHighLevel Website Developer',
       headlineStart: 'Website Developer',
       headlineAccent: 'for Agencies',
       headlineEnd: '& GCC Businesses.',
-      subtext: 'I provide white-label website development for agencies using Webflow and GoHighLevel, with responsive implementation and custom front-end refinements when needed. I support Arabic and English websites while maintaining design consistency and meeting project requirements.',
+      subtext: 'I provide white-label website development for agencies using GoHighLevel, with responsive implementation and custom front-end refinements when needed. I support Arabic and English websites while maintaining design consistency and meeting project requirements.',
       ctaWork: 'View Selected Work',
       ctaContact: 'Discuss Agency Support',
       credibilityLine: '2+ Years in Website Development • 16+ Website Projects • Kuwait & GCC Agency Experience',
@@ -58,20 +58,16 @@ export const TRANSLATIONS = {
     specialization: {
       eyebrow: 'Core Capabilities',
       headline: 'From Design Handoff to Production Launch.',
-      subtext: 'Webflow and GoHighLevel website development, custom front-end code, and bilingual regional delivery for agency and in-house teams.',
+      subtext: 'GoHighLevel website development, custom front-end code, and bilingual regional delivery for agency and in-house teams.',
       capabilityLabel: 'Core Competency',
       items: [
-        {
-          title: 'Webflow Website Development',
-          desc: 'Converting approved Figma and Adobe XD designs into clean, responsive Webflow sites with maintainable CMS structures and reusable components.',
-        },
         {
           title: 'GoHighLevel Website Development',
           desc: 'Building responsive website pages and landing pages within GHL, structuring forms and custom styling to match approved design specifications.',
         },
         {
           title: 'Custom HTML, CSS & JavaScript',
-          desc: 'Writing bespoke code to extend Webflow and GHL whenever native platform controls fall short of specific layout or interaction requirements.',
+          desc: 'Writing bespoke code to extend GoHighLevel whenever native platform controls fall short of specific layout or interaction requirements.',
         },
         {
           title: 'Arabic RTL & English LTR Parity',
@@ -92,8 +88,8 @@ export const TRANSLATIONS = {
     differentiator: {
       eyebrow: 'Development Approach',
       headline: 'Platform Expertise Powered by Custom Code When Needed.',
-      subtext: 'I turn approved designs into production websites in Webflow and GoHighLevel, using custom HTML, CSS, and JavaScript whenever a layout treatment or interaction exceeds native builder limits.',
-      leftCardTitle: 'Webflow & GHL Development',
+      subtext: 'I turn approved designs into production websites in GoHighLevel, using custom HTML, CSS, and JavaScript whenever a layout treatment or interaction exceeds native builder limits.',
+      leftCardTitle: 'GoHighLevel Development',
       leftCardBadge: 'Design-to-Platform',
       leftCardDescription: 'High-fidelity conversion of approved Figma and Adobe XD designs into responsive website builds.',
       leftCardBullets: [
@@ -108,10 +104,10 @@ export const TRANSLATIONS = {
       rightCardBullets: [
         'Custom CSS for advanced layouts, micro-styling, and custom typography',
         'JavaScript for bespoke interactive behaviors and interface states',
-        'Platform-specific custom code embeds for Webflow and GHL pages',
+        'Platform-specific custom code embeds for GoHighLevel pages',
         'Performance-conscious code execution without unnecessary overhead',
       ],
-      quote: '“I build websites in Webflow and GoHighLevel to production standards, applying custom code wherever a project requires custom styling, layout precision, or dynamic front-end behavior.”',
+      quote: '“I build websites in GoHighLevel to production standards, applying custom code wherever a project requires custom styling, layout precision, or dynamic front-end behavior.”',
     },
 
     // GCC / Arabic Section
@@ -145,7 +141,7 @@ export const TRANSLATIONS = {
     servicesSection: {
       eyebrow: 'Development Services',
       headline: 'Website Development Support for Agencies & Companies.',
-      subtext: 'Webflow builds, GoHighLevel websites, custom front-end code, and bilingual Arabic/English implementation.',
+      subtext: 'GoHighLevel websites, custom front-end code, and bilingual Arabic/English implementation.',
       viewAllServices: 'Explore All Services',
       learnMore: 'View service details',
     },
@@ -153,14 +149,14 @@ export const TRANSLATIONS = {
     // About / Story Section
     aboutSection: {
       eyebrow: 'Professional Background',
-      headline: 'Webflow & GoHighLevel Developer for Agency & In-House Teams.',
+      headline: 'GoHighLevel Developer for Agency & In-House Teams.',
       p1: 'I have 2+ years of professional website development experience and have delivered 16+ website projects, with the majority serving businesses in Kuwait and the wider GCC region through white-label agency partnerships. My background working with a Kuwait-based marketing agency provided direct, hands-on experience in agency delivery cycles, multi-breakpoint responsive builds, and bilingual web production.',
-      p2: 'I convert approved Figma and Adobe XD designs into responsive, structured websites on Webflow and GoHighLevel. When native builder constraints arise, I write clean HTML, CSS, and JavaScript to deliver the exact layout and interactions required.',
+      p2: 'I convert approved Figma and Adobe XD designs into responsive, structured websites on GoHighLevel. When native builder constraints arise, I write clean HTML, CSS, and JavaScript to deliver the exact layout and interactions required.',
       p3: 'I collaborate flexibly under several working models: full-time employment within a company or agency, contract or project-based work, freelance development, and white-label production support for digital agencies and marketing studios.',
       evolutionTitle: 'Professional Trajectory',
       evolutionSteps: [
         { phase: '01', title: 'Kuwait Agency Production', desc: 'Hands-on delivery with a Kuwait-based marketing agency on client websites and agency workflows.' },
-        { phase: '02', title: 'Webflow & GHL Development', desc: 'Translating approved Figma & XD designs into responsive, multi-breakpoint website builds with CMS architecture.' },
+        { phase: '02', title: 'GoHighLevel Development', desc: 'Translating approved Figma & XD designs into responsive, multi-breakpoint website builds with CMS architecture.' },
         { phase: '03', title: 'Custom Code & Bilingual UX', desc: 'Extending builds with bespoke HTML/CSS/JS, full Arabic RTL layout parity, and SEO foundations.' },
       ],
       ctaAbout: 'More About My Approach',
@@ -180,13 +176,13 @@ export const TRANSLATIONS = {
 
     // Footer
     footer: {
-      brandDesc: 'Webflow & GoHighLevel Website Developer providing responsive production builds, custom HTML/CSS/JS, and Arabic RTL implementation for agencies and companies across Kuwait and the GCC.',
+      brandDesc: 'GoHighLevel Website Developer providing responsive production builds, custom HTML/CSS/JS, and Arabic RTL implementation for agencies and companies across Kuwait and the GCC.',
       navHeading: 'Navigation',
       servicesHeading: 'Specializations',
       contactHeading: 'Direct Contact',
-      copyright: 'Ahmed. All rights reserved. Webflow & GoHighLevel Website Developer.',
+      copyright: 'Ahmed. All rights reserved. GoHighLevel Website Developer.',
       verifiedNote: '2+ years in website development • 16+ website projects',
-      webflowService: 'Webflow Website Development',
+      webflowService: 'GoHighLevel Website Development',
       customService: 'Custom Front-End (HTML / CSS / JS)',
       languageService: 'Arabic RTL & English LTR Development',
       ghlService: 'GoHighLevel Website Development',
@@ -216,7 +212,7 @@ export const TRANSLATIONS = {
     // Services Page
     servicesPage: {
       eyebrow: 'Development Services',
-      headline: 'Webflow, GoHighLevel & Custom Front-End Development.',
+      headline: 'GoHighLevel & Custom Front-End Development.',
       subtext: 'Production website implementation for agencies, studios, and businesses—from approved Figma/XD designs through responsive, bilingual launch.',
       idealForLabel: 'Ideal For:',
       deliverablesLabel: 'Key Deliverables:',
@@ -227,7 +223,7 @@ export const TRANSLATIONS = {
     // About Page
     aboutPage: {
       eyebrow: 'About the Developer',
-      headline: 'Webflow & GoHighLevel Developer with Kuwait & GCC Agency Experience.',
+      headline: 'GoHighLevel Developer with Kuwait & GCC Agency Experience.',
       intro: 'I collaborate with digital agencies, creative studios, and companies to turn approved designs into clean, responsive, and maintainable production websites. Flexible across full-time employment, contract work, and white-label agency delivery.',
       snapshotTitle: 'Professional Snapshot',
       snapshotExperience: 'Website Experience',
@@ -240,7 +236,7 @@ export const TRANSLATIONS = {
       snapshotProjectsValue: '16+ website projects',
       snapshotRegionalValue: 'Kuwait & GCC commercial projects',
       snapshotLanguagesValue: 'Arabic — Native | English — Written Professional Communication',
-      snapshotSpecializationValue: 'Webflow, GoHighLevel & Custom HTML/CSS/JS',
+      snapshotSpecializationValue: 'GoHighLevel & Custom HTML/CSS/JS',
       snapshotAgencyValue: 'Full-Time, Contract, Freelance & White-Label',
       principleLabel: 'Principle',
       principlesTitle: 'How I Work',
@@ -271,7 +267,7 @@ export const TRANSLATIONS = {
     // Contact Page
     contactPage: {
       eyebrow: 'Project & Agency Inquiries',
-      headline: 'Need a Webflow & GoHighLevel Developer for Your Next Build?',
+      headline: 'Need a GoHighLevel Developer for Your Next Build?',
       subtext: 'Agency owners, creative directors, project managers, and company marketing teams can reach out to discuss upcoming website builds, white-label production support, contract roles, or full-time opportunities.',
       directChannelsTitle: 'Direct Channels',
       directChannelsDesc: 'For project briefs, agency partnerships, and role inquiries:',
@@ -293,7 +289,7 @@ export const TRANSLATIONS = {
       phonePlaceholder: '+965 XXXXXXXX',
       typeLabel: 'Project / Collaboration Type',
       typeOptions: [
-        'Webflow website development (Figma to Webflow)',
+        'GoHighLevel website development (Figma to GoHighLevel)',
         'GoHighLevel website or landing page development',
         'Custom HTML, CSS or JavaScript implementation',
         'Bilingual Arabic RTL & English LTR website',
@@ -304,13 +300,14 @@ export const TRANSLATIONS = {
       budgetLabel: 'Estimated Budget Range (Optional)',
       budgetOptions: [
         'Select budget range...',
-        '$1,000 – $2,500',
-        '$2,500 – $5,000',
-        '$5,000 – $10,000+',
+        '$50 – $200',
+        '$200 – $600',
+        '$600 – $1,500',
+        '$1,500 – $3,000+',
         'To be determined based on scope',
       ],
       messageLabel: 'Project Overview & Requirements',
-      messagePlaceholder: 'Share the design status (Figma/XD), platforms (Webflow/GHL), key deliverables, and expected delivery timeline...',
+      messagePlaceholder: 'Type of business activity, and details related to it...',
       submitBtn: 'Send Development Brief',
       submittingBtn: 'Sending Brief...',
       submitError: 'The message could not be sent. Please try again or contact me by email.',
@@ -355,17 +352,17 @@ export const TRANSLATIONS = {
       about: 'عن أحمد',
       contact: 'تواصل معي',
       cta: 'ابدأ مشروعك',
-      whiteLabelBadge: 'مطور Webflow وGoHighLevel • شريك الوكالات',
+      whiteLabelBadge: 'مطورGoHighLevel • شريك الوكالات',
       languageLabel: 'English',
     },
 
     // Hero Section
     hero: {
-      badge: 'مطور مواقع Webflow وGoHighLevel',
+      badge: 'مطور مواقع GoHighLevel',
       headlineStart: 'مطور مواقع',
       headlineAccent: 'للوكالات',
       headlineEnd: 'وشركات الخليج.',
-      subtext: 'أقدّم خدمات تنفيذ المواقع للوكالات بنظام White-Label باستخدام Webflow وGoHighLevel، مع ضبط التجاوب وإضافة التخصيصات البرمجية عند الحاجة. كما أنفّذ المواقع باللغتين العربية والإنجليزية، مع الالتزام بالتصميم المعتمد ومتطلبات كل مشروع.',
+      subtext: 'أقدّم خدمات تنفيذ المواقع للوكالات بنظام White-Label باستخدام GoHighLevel، مع ضبط التجاوب وإضافة التخصيصات البرمجية عند الحاجة. كما أنفّذ المواقع باللغتين العربية والإنجليزية، مع الالتزام بالتصميم المعتمد ومتطلبات كل مشروع.',
       ctaWork: 'استعراض الأعمال المختارة',
       ctaContact: 'ناقش فرص التعاون',
       credibilityLine: 'أكثر من عامين في تطوير المواقع • 16+ مشروع موقع إلكتروني • خبرة في وكالات الكويت والخليج',
@@ -405,12 +402,12 @@ export const TRANSLATIONS = {
     specialization: {
       eyebrow: 'القدرات والخبرات الأساسية',
       headline: 'من تسليم التصميم إلى الإطلاق المباشر.',
-      subtext: 'تطوير مواقع Webflow وGoHighLevel، وبرمجة الواجهات المخصصة، وخبرة التنفيذ ثنائي اللغة للوكالات والفرق الداخلية.',
+      subtext: 'تطوير مواقعGoHighLevel، وبرمجة الواجهات المخصصة، وخبرة التنفيذ ثنائي اللغة للوكالات والفرق الداخلية.',
       capabilityLabel: 'القدرة الأساسية',
       items: [
         {
-          title: 'تطوير مواقع Webflow',
-          desc: 'تنفيذ تصاميم Figma وAdobe XD على Webflow، وتطوير متجاوب عبر كافة الشاشات، وهيكلة CMS مرنة وسهلة الإدارة.',
+          title: 'تطوير مواقع GoHighLevel',
+          desc: 'تنفيذ تصاميم Figma وAdobe XD على GoHighLevel، وتطوير متجاوب عبر كافة الشاشات، وهيكلة CMS مرنة وسهلة الإدارة.',
         },
         {
           title: 'تطوير مواقع GoHighLevel',
@@ -418,7 +415,7 @@ export const TRANSLATIONS = {
         },
         {
           title: 'كود مخصص HTML / CSS / JS',
-          desc: 'كتابة كود مخصص لتوسيع قدرات Webflow وGHL متى ما عجزت الأدوات الافتراضية عن تلبية متطلبات التصميم والتفاعل.',
+          desc: 'كتابة كود مخصص لتوسيع قدرات GoHighLevel متى ما عجزت الأدوات الافتراضية عن تلبية متطلبات التصميم والتفاعل.',
         },
         {
           title: 'العربية RTL والإنجليزية LTR',
@@ -439,8 +436,8 @@ export const TRANSLATIONS = {
     differentiator: {
       eyebrow: 'منهجية التطوير',
       headline: 'إتقان منصات المواقع مدعوماً بكود مخصص عند الحاجة.',
-      subtext: 'أنفذ التصاميم المعتمدة على Webflow وGoHighLevel، وأوظف HTML وCSS وJavaScript المخصص عندما يتطلب التصميم أو التفاعل حلولاً تتجاوز الإمكانات الافتراضية للمنصة.',
-      leftCardTitle: 'تطوير Webflow وGHL',
+      subtext: 'أنفذ التصاميم المعتمدة علىGoHighLevel، وأوظف HTML وCSS وJavaScript المخصص عندما يتطلب التصميم أو التفاعل حلولاً تتجاوز الإمكانات الافتراضية للمنصة.',
+      leftCardTitle: 'تطوير GoHighLevel',
       leftCardBadge: 'من التصميم إلى المنصة',
       leftCardDescription: 'تحويل عالي الدقة لتصاميم Figma وAdobe XD المعتمدة إلى مواقع إلكترونية متجاوبة.',
       leftCardBullets: [
@@ -455,10 +452,10 @@ export const TRANSLATIONS = {
       rightCardBullets: [
         'تنسيقات CSS مخصصة للتخطيطات المتقدمة وضبط الخطوط والواجهات',
         'جافا سكريبت للتفاعلات الحركية المخصصة وسلوكيات الواجهة التفاعلية',
-        'تضمين كود مخصص لصفحات Webflow وGHL لتجاوز القيود المنصية',
+        'تضمين كود مخصص لصفحات GoHighLevel لتجاوز القيود المنصية',
         'تنفيذ برمجي واعٍ بالأداء يحافظ على خفة الصفحات وسرعة تحميلها',
       ],
-      quote: '“أبني المواقع على Webflow وGoHighLevel وفق معايير الإنتاج الاحترافية، مع توظيف الكود المخصص أينما تطلب المشروع دقة في التخطيط أو سلوكاً تفاعلياً متميزاً.”',
+      quote: '“أبني المواقع على GoHighLevel وفق معايير الإنتاج الاحترافية، مع توظيف الكود المخصص أينما تطلب المشروع دقة في التخطيط أو سلوكاً تفاعلياً متميزاً.”',
     },
 
     // GCC / Arabic Section
@@ -492,7 +489,7 @@ export const TRANSLATIONS = {
     servicesSection: {
       eyebrow: 'خدمات تطوير المواقع',
       headline: 'دعم تطوير المواقع للوكالات والشركات.',
-      subtext: 'تطوير مواقع Webflow، ومواقع GoHighLevel، وبرمجة الواجهات المخصصة، والتنفيذ ثنائي اللغة عربي/إنجليزي.',
+      subtext: 'تطوير مواقع GoHighLevel، وبرمجة الواجهات المخصصة، والتنفيذ ثنائي اللغة عربي/إنجليزي.',
       viewAllServices: 'استكشف كافة الخدمات بالتفصيل',
       learnMore: 'عرض تفاصيل الخدمة',
     },
@@ -500,14 +497,14 @@ export const TRANSLATIONS = {
     // About / Story Section
     aboutSection: {
       eyebrow: 'الخلفية المهنية',
-      headline: 'مطور Webflow وGoHighLevel يدعم فرق الوكالات والشركات.',
+      headline: 'مطورGoHighLevel يدعم فرق الوكالات والشركات.',
       p1: 'أمتلك خبرة تتجاوز عامين في تطوير المواقع الإلكترونية، وأسهمت في تنفيذ أكثر من 16 مشروع موقع إلكتروني، نُفّذ معظمها لصالح شركات في الكويت والخليج عبر شراكات عمل غير معلن (White-label) مع وكالة تسويق كويتية. منحتني هذه الخبرة العملية دراية عميقة بسير العمل داخل الوكالات، والتسليم في المواعيد المحددة، ومعايير الويب ثنائية اللغة.',
-      p2: 'أحوّل تصاميم Figma وAdobe XD المعتمدة إلى مواقع متجاوبة ومنظمة على Webflow وGoHighLevel. وعندما تظهر قيود في المنصة، أكتب كود HTML وCSS وJavaScript نظيفاً لتنفيذ التخطيط والتفاعلات المطلوبة بدقة.',
+      p2: 'أحوّل تصاميم Figma وAdobe XD المعتمدة إلى مواقع متجاوبة ومنظمة علىGoHighLevel. وعندما تظهر قيود في المنصة، أكتب كود HTML وCSS وJavaScript نظيفاً لتنفيذ التخطيط والتفاعلات المطلوبة بدقة.',
       p3: 'أتعاون بمرونة وفق نماذج عمل متعددة: التوظيف الكامل لدى الشركات والوكالات، أو العقود ومشاريع العمل الحر، أو كشريك إنتاج غير معلن (White-label) يدعم فرق الوكالات والاستوديوهات التسويقية.',
       evolutionTitle: 'مسار الخبرة والتطور',
       evolutionSteps: [
         { phase: '01', title: 'الإنتاج مع وكالات الكويت', desc: 'تنفيذ عملي ضمن وكالة تسويق كويتية لمواقع العملاء وسير عمل الإنتاج.' },
-        { phase: '02', title: 'تطوير Webflow وGHL', desc: 'تحويل تصاميم Figma وXD إلى مواقع متجاوبة عبر مختلف الشاشات مع بنية CMS محكمة.' },
+        { phase: '02', title: 'تطوير GoHighLevel', desc: 'تحويل تصاميم Figma وXD إلى مواقع متجاوبة عبر مختلف الشاشات مع بنية CMS محكمة.' },
         { phase: '03', title: 'الكود المخصص والواجهات الثنائية', desc: 'تطوير الواجهات بكود HTML/CSS/JS مخصص، وتناسق تام للواجهات العربية RTL وأساسيات SEO.' },
       ],
       ctaAbout: 'المزيد عن فلسفة العمل والمنهجية',
@@ -527,13 +524,13 @@ export const TRANSLATIONS = {
 
     // Footer
     footer: {
-      brandDesc: 'مطور مواقع Webflow وGoHighLevel يقدم تنفيذاً متجاوباً وجاهزاً للإنتاج، وكود HTML/CSS/JS مخصص، وواجهات عربية RTL للوكالات والشركات في الكويت والخليج.',
+      brandDesc: 'مطور مواقع GoHighLevel يقدم تنفيذاً متجاوباً وجاهزاً للإنتاج، وكود HTML/CSS/JS مخصص، وواجهات عربية RTL للوكالات والشركات في الكويت والخليج.',
       navHeading: 'روابط سريعة',
       servicesHeading: 'التخصصات الأساسية',
       contactHeading: 'قنوات التواصل المباشر',
-      copyright: 'أحمد. جميع الحقوق محفوظة. مطور مواقع Webflow وGoHighLevel.',
+      copyright: 'أحمد. جميع الحقوق محفوظة. مطور مواقع GoHighLevel.',
       verifiedNote: 'أكثر من عامين في تطوير المواقع • 16+ مشروع موقع إلكتروني',
-      webflowService: 'تطوير مواقع Webflow',
+      webflowService: 'تطوير مواقع GoHighLevel',
       customService: 'تطوير الواجهات (HTML / CSS / JS)',
       languageService: 'تنفيذ العربية RTL والإنجليزية LTR',
       ghlService: 'تطوير مواقع GoHighLevel',
@@ -563,7 +560,7 @@ export const TRANSLATIONS = {
     // Services Page
     servicesPage: {
       eyebrow: 'خدمات التطوير',
-      headline: 'تطوير Webflow وGoHighLevel وبرمجة الواجهات المخصصة.',
+      headline: 'تطوير GoHighLevel وبرمجة الواجهات المخصصة.',
       subtext: 'تنفيذ مواقع جاهزة للإنتاج للوكالات والاستوديوهات والشركات—من تصاميم Figma وXD المعتمدة إلى إطلاق متجاوب ثنائي اللغة.',
       idealForLabel: 'الأنسب لـ:',
       deliverablesLabel: 'أبرز المخرجات:',
@@ -574,7 +571,7 @@ export const TRANSLATIONS = {
     // About Page
     aboutPage: {
       eyebrow: 'عن المطور',
-      headline: 'مطور Webflow وGoHighLevel بخبرة عملية مع وكالات الكويت والخليج.',
+      headline: 'مطور GoHighLevel بخبرة عملية مع وكالات الكويت والخليج.',
       intro: 'أتعاون مع وكالات التسويق، والاستوديوهات الرقمية، والشركات لتحويل التصاميم المعتمدة إلى مواقع متجاوبة عالية الأداء وسهلة الصيانة. متاح للتوظيف الكامل، وعقود المشاريع، وشراكات الإنتاج بنظام White-Label.',
       snapshotTitle: 'نبذة مهنية',
       snapshotExperience: 'خبرة تطوير المواقع',
@@ -587,7 +584,7 @@ export const TRANSLATIONS = {
       snapshotProjectsValue: '16+ مشروع موقع إلكتروني',
       snapshotRegionalValue: 'مشاريع تجارية في الكويت والخليج',
       snapshotLanguagesValue: 'العربية — اللغة الأم | الإنجليزية — تواصل مهني متقن',
-      snapshotSpecializationValue: 'Webflow وGoHighLevel وكود HTML/CSS/JS مخصص',
+      snapshotSpecializationValue: 'GoHighLevel وكود HTML/CSS/JS مخصص',
       snapshotAgencyValue: 'دوام كامل، عقود مشاريع، عمل حر، وWhite-label',
       principleLabel: 'مبدأ',
       principlesTitle: 'أسلوب العمل',
@@ -618,7 +615,7 @@ export const TRANSLATIONS = {
     // Contact Page
     contactPage: {
       eyebrow: 'استفسارات المشاريع والوكالات',
-      headline: 'هل تبحث عن مطور Webflow وGoHighLevel لمشروعك القادم؟',
+      headline: 'هل تبحث عن مطورGoHighLevel لمشروعك القادم؟',
       subtext: 'يمكن لأصحاب الوكالات، والمديرين الإبداعيين، ومديري المشاريع، وفرق التسويق في الشركات التواصل لمناقشة مشاريع المواقع، أو طلب دعم إنتاج بنظام White-label، أو بحث فرص العمل التعاقدي والتوظيف الكامل.',
       directChannelsTitle: 'قنوات التواصل المباشر',
       directChannelsDesc: 'لمتطلبات المشاريع وشراكات الوكالات واستفسارات التوظيف:',
@@ -640,7 +637,7 @@ export const TRANSLATIONS = {
       phonePlaceholder: '+965 XXXXXXXX',
       typeLabel: 'نوع المشروع أو التعاون المطلوب',
       typeOptions: [
-        'تطوير موقع Webflow (من Figma إلى Webflow)',
+        'تطوير موقع GoHighLevel (من Figma إلى GoHighLevel)',
         'تطوير موقع أو صفحة هبوط على GoHighLevel',
         'برمجة واجهات مخصصة بـ HTML أو CSS أو JavaScript',
         'موقع ثنائي اللغة (عربي RTL وإنجليزي LTR)',
@@ -651,13 +648,14 @@ export const TRANSLATIONS = {
       budgetLabel: 'الميزانية التقديرية المتوقعة (اختياري)',
       budgetOptions: [
         'حدد النطاق التقريبي...',
-        '1,000$ – 2,500$',
-        '2,500$ – 5,000$',
-        '5,000$ – 10,000$+',
+        '$50 – $200',
+        '$200 – $600',
+        '$600 – $1,500',
+        '$1,500 – $3,000+',
         'تُحدد لاحقاً حسب نطاق المتطلبات',
       ],
       messageLabel: 'نبذة عن المشروع والمتطلبات',
-      messagePlaceholder: 'شارك حالة التصميم (Figma/XD)، والمنصة المستهدفة (Webflow/GHL)، وأبرز المتطلبات والموعد المستهدف للتسليم...',
+      messagePlaceholder: 'نوع النشاط التجاري، والتفاصيل المتعلقة به...',
       submitBtn: 'إرسال متطلبات التطوير',
       submittingBtn: 'جارٍ إرسال المتطلبات...',
       submitError: 'تعذر إرسال الرسالة. حاول مجدداً أو تواصل معي عبر البريد الإلكتروني.',

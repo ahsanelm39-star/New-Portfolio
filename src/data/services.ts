@@ -1,46 +1,46 @@
 import { ServiceItem } from '@/lib/types';
 
 export const SERVICES: ServiceItem[] = [
-  {
-    id: 'webflow-development',
-    order: 1,
-    icon: 'layout',
-    title: {
-      en: 'Webflow Website Development',
-      ar: 'تطوير مواقع Webflow',
-    },
-    subtitle: {
-      en: 'Figma and Adobe XD implementation for agencies and corporate teams.',
-      ar: 'تنفيذ تصاميم Figma وAdobe XD على Webflow للوكالات والشركات.',
-    },
-    description: {
-      en: 'I translate approved designs into clean, responsive Webflow websites with structured CMS collections, reusable layouts, and maintainable content organization ready for production review.',
-      ar: 'أحوّل التصاميم المعتمدة إلى مواقع Webflow متجاوبة ونظيفة مع بنية CMS سهلة الإدارة، ومكونات قابلة لإعادة الاستخدام، وتنظيم محكم جاهز لمراجعة ما قبل الإطلاق.',
-    },
-    deliverables: {
-      en: [
-        'Figma and Adobe XD to Webflow page implementation',
-        'Responsive layout engineering across desktop, tablet, and mobile',
-        'Webflow CMS collections, dynamic templates, and components',
-        'Clean class naming, reusable layouts, and native interactions',
-      ],
-      ar: [
-        'تنفيذ الصفحات من Figma وAdobe XD إلى Webflow بدقة',
-        'هندسة التخطيط المتجاوب عبر الحواسيب والأجهزة اللوحية والهواتف',
-        'مجموعات CMS وقوالب ديناميكية ومكونات قابلة لإعادة الاستخدام',
-        'تسمية منظمة للكلاسات وبنية تصميم قابلة للتطوير',
-      ],
-    },
-    idealFor: {
-      en: 'Agencies, creative studios, and companies with approved designs that need a dependable developer to build and prepare production-ready Webflow sites.',
-      ar: 'الوكالات والاستوديوهات الإبداعية والشركات التي تملك تصاميم معتمدة وتحتاج إلى مطور موثوق لبناء موقع Webflow جاهز للإنتاج.',
-    },
-    badge: {
-      en: 'Webflow Core',
-      ar: 'تطوير Webflow',
-    },
-    isPrimaryWebflow: true,
-  },
+  // {
+  //   id: 'GoHighLevel-development',
+  //   order: 1,
+  //   icon: 'layout',
+  //   title: {
+  //     en: 'GoHighLevel Website Development',
+  //     ar: 'تطوير مواقع GoHighLevel',
+  //   },
+  //   subtitle: {
+  //     en: 'Figma and Adobe XD implementation for agencies and corporate teams.',
+  //     ar: 'تنفيذ تصاميم Figma وAdobe XD على GoHighLevel للوكالات والشركات.',
+  //   },
+  //   description: {
+  //     en: 'I translate approved designs into clean, responsive GoHighLevel websites with structured CMS collections, reusable layouts, and maintainable content organization ready for production review.',
+  //     ar: 'أحوّل التصاميم المعتمدة إلى مواقع GoHighLevel متجاوبة ونظيفة مع بنية CMS سهلة الإدارة، ومكونات قابلة لإعادة الاستخدام، وتنظيم محكم جاهز لمراجعة ما قبل الإطلاق.',
+  //   },
+  //   deliverables: {
+  //     en: [
+  //       'Figma and Adobe XD to GoHighLevel page implementation',
+  //       'Responsive layout engineering across desktop, tablet, and mobile',
+  //       'GoHighLevel CMS collections, dynamic templates, and components',
+  //       'Clean class naming, reusable layouts, and native interactions',
+  //     ],
+  //     ar: [
+  //       'تنفيذ الصفحات من Figma وAdobe XD إلى GoHighLevel بدقة',
+  //       'هندسة التخطيط المتجاوب عبر الحواسيب والأجهزة اللوحية والهواتف',
+  //       'مجموعات CMS وقوالب ديناميكية ومكونات قابلة لإعادة الاستخدام',
+  //       'تسمية منظمة للكلاسات وبنية تصميم قابلة للتطوير',
+  //     ],
+  //   },
+  //   idealFor: {
+  //     en: 'Agencies, creative studios, and companies with approved designs that need a dependable developer to build and prepare production-ready GoHighLevel sites.',
+  //     ar: 'الوكالات والاستوديوهات الإبداعية والشركات التي تملك تصاميم معتمدة وتحتاج إلى مطور موثوق لبناء موقع GoHighLevel جاهز للإنتاج.',
+  //   },
+  //   badge: {
+  //     en: 'GoHighLevel Core',
+  //     ar: 'تطوير GoHighLevel',
+  //   },
+  //   isPrimaryWebflow: true,
+  // },
   {
     id: 'go-high-level',
     order: 2,
@@ -90,24 +90,24 @@ export const SERVICES: ServiceItem[] = [
       ar: 'برمجة الواجهات المخصصة',
     },
     subtitle: {
-      en: 'HTML, CSS, and JavaScript to extend Webflow and GHL websites.',
-      ar: 'كود مخصص لتوسيع قدرات مواقع Webflow وGoHighLevel.',
+      en: 'HTML, CSS, and JavaScript to extend GoHighLevel websites.',
+      ar: 'كود مخصص لتوسيع قدرات مواقع GoHighLevel.',
     },
     description: {
-      en: 'A practical development advantage: writing clean, hand-coded HTML, CSS, and JavaScript whenever native Webflow or GHL capabilities fall short of specific layout treatments, bespoke interactions, or UI behaviors.',
-      ar: 'ميزة عملية في التنفيذ: كتابة كود مخصص نظيف بـ HTML وCSS وJavaScript متى ما كانت خيارات Webflow أو GHL غير كافية لتحقيق تخطيط دقيق أو تفاعل مخصص.',
+      en: 'A practical development advantage: writing clean, hand-coded HTML, CSS, and JavaScript whenever native GoHighLevel capabilities fall short of specific layout treatments, bespoke interactions, or UI behaviors.',
+      ar: 'ميزة عملية في التنفيذ: كتابة كود مخصص نظيف بـ HTML وCSS وJavaScript متى ما كانت خيارات GoHighLevel غير كافية لتحقيق تخطيط دقيق أو تفاعل مخصص.',
     },
     deliverables: {
       en: [
         'Custom CSS for layout refinements, fine typography, and micro-styling',
         'Lightweight JavaScript for interactive behaviors and interface states',
-        'Platform-tailored embeds and form customization for Webflow and GHL',
+        'Platform-tailored embeds and form customization for GoHighLevel',
         'Maintainable code handoff integrated seamlessly into the website build',
       ],
       ar: [
         'تنسيقات CSS مخصصة لضبط التخطيطات المعقدة والخطوط الدقيقة',
         'جافا سكريبت خفيف للتفاعلات الحركية وسلوكيات الواجهة',
-        'تضمينات مخصصة ونماذج مهيأة لمواقع Webflow وGHL',
+        'تضمينات مخصصة ونماذج مهيأة لمواقع GHL',
         'تسليم كود منظم يندمج بسلاسة مع بنية الموقع',
       ],
     },
