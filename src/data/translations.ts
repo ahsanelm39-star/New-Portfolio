@@ -15,18 +15,18 @@ export const TRANSLATIONS = {
     // Hero Section
     hero: {
       badge: 'GoHighLevel Website Developer',
-      headlineStart: 'Website Developer',
+      headlineStart: 'GoHighLevel Developer',
       headlineAccent: 'for Agencies',
-      headlineEnd: '& GCC Businesses.',
-      subtext: 'I provide white-label website development for agencies using GoHighLevel, with responsive implementation and custom front-end refinements when needed. I support Arabic and English websites while maintaining design consistency and meeting project requirements.',
+      headlineEnd: '& Teams Across the GCC.',
+      subtext: 'I build visually refined, business-focused websites and landing pages in GoHighLevel, combining thoughtful layouts, relevant imagery, clear content structure, responsive development, and custom front-end code when needed.',
       ctaWork: 'View Selected Work',
       ctaContact: 'Discuss Agency Support',
       credibilityLine: '2+ Years in Website Development • 16+ Website Projects • GCC Agency Experience',
       statusAvailable: 'Available for Full-Time, Contract & White-Label Work',
-      featuredDescription: 'Kuwait commercial website delivered with responsive Arabic RTL and English LTR layouts. Figures in the preview reflect client-managed content.',
+      featuredDescription: 'Commercial website delivered with responsive Arabic RTL and English LTR layouts for regional business. Figures in the preview reflect client-managed content.',
       customCodeBadge: 'Custom Development',
       customCodeDescription: 'HTML, CSS, and JavaScript to extend layouts and interactions beyond native platform capabilities.',
-      regionalProof: 'Including work for Kuwait & GCC businesses',
+      regionalProof: 'Website development for agencies & businesses across the GCC',
       metrics: {
         projectsValue: '16+',
         projectsLabel: 'Website Projects',
@@ -43,12 +43,12 @@ export const TRANSLATIONS = {
     workSection: {
       eyebrow: 'Selected Work',
       headline: 'Production Websites Delivered for Real Briefs.',
-      subtext: 'Delivered websites for Kuwait and GCC businesses, including white-label builds for agency partners and custom front-end concepts. Figures shown in source previews reflect client-provided material.',
+      subtext: 'Delivered websites for agencies and businesses across the GCC, including white-label builds for agency partners and custom front-end concepts. Figures shown in source previews reflect client-provided material.',
       highlightLabel: 'Implementation Scope:',
       viewAll: 'View All Projects & Concepts',
       viewCaseStudy: 'Explore Case Study',
       viewLiveDemo: 'View Live Site',
-      platformLabel: 'Delivery Model',
+      platformLabel: 'Platform',
       industryLabel: 'Industry',
       locationLabel: 'Location',
       bilingualBadge: 'Arabic RTL & English LTR',
@@ -88,14 +88,14 @@ export const TRANSLATIONS = {
     differentiator: {
       eyebrow: 'Development Approach',
       headline: 'Platform Expertise Powered by Custom Code When Needed.',
-      subtext: 'I turn approved designs into production websites in GoHighLevel, using custom HTML, CSS, and JavaScript whenever a layout treatment or interaction exceeds native builder limits.',
+      subtext: 'I build production websites in GoHighLevel, using custom HTML, CSS, and JavaScript whenever a layout treatment or interaction exceeds native builder limits.',
       leftCardTitle: 'GoHighLevel Development',
-      leftCardBadge: 'Design-to-Platform',
-      leftCardDescription: 'High-fidelity conversion of approved Figma and Adobe XD designs into responsive website builds.',
+      leftCardBadge: 'Visual Layout & Structure',
+      leftCardDescription: 'High-fidelity development of responsive websites and landing pages in GoHighLevel.',
       leftCardBullets: [
-        'Figma and Adobe XD to production website implementation',
+        'Responsive website and landing page development within GoHighLevel',
         'Structured layouts for desktop, tablet, and mobile breakpoints',
-        'CMS collections, dynamic templates, and reusable sections',
+        'Reusable website sections, structured layouts, and custom templates',
         'Smooth collaboration within agency sprint and feedback workflows',
       ],
       rightCardTitle: 'Custom Front-End Code',
@@ -112,9 +112,9 @@ export const TRANSLATIONS = {
 
     // GCC / Arabic Section
     gcc: {
-      eyebrow: 'Kuwait & GCC Experience',
+      eyebrow: 'GCC Regional Experience',
       headline: 'Bilingual Implementation Tailored for Regional Businesses.',
-      subtext: 'Practical experience delivering websites for Kuwait and GCC businesses through agency partnerships brings deep familiarity with Arabic RTL conventions, bilingual symmetry, and regional user flows.',
+      subtext: 'Practical experience delivering websites for businesses and agencies across the GCC brings deep familiarity with Arabic RTL conventions, bilingual symmetry, and regional user flows.',
       features: [
         {
           title: 'Arabic RTL Layout Structure',
@@ -133,7 +133,7 @@ export const TRANSLATIONS = {
           desc: 'Parallel implementation ensuring Arabic RTL and English LTR versions look balanced and maintain consistent brand fidelity.',
         },
       ],
-      proofLocation: 'Kuwait • GCC',
+      proofLocation: 'GCC • Regional Delivery',
       proofExperience: '16+ Website Projects Delivered',
     },
 
@@ -150,13 +150,13 @@ export const TRANSLATIONS = {
     aboutSection: {
       eyebrow: 'Professional Background',
       headline: 'GoHighLevel Developer for Agency & In-House Teams.',
-      p1: 'I have 2+ years of professional website development experience and have delivered 16+ website projects, with the majority serving businesses in Kuwait and the wider GCC region through white-label agency partnerships. My background working with a Kuwait-based marketing agency provided direct, hands-on experience in agency delivery cycles, multi-breakpoint responsive builds, and bilingual web production.',
-      p2: 'I convert approved Figma and Adobe XD designs into responsive, structured websites on GoHighLevel. When native builder constraints arise, I write clean HTML, CSS, and JavaScript to deliver the exact layout and interactions required.',
+      p1: 'I have 2+ years of professional website development experience and have delivered 16+ website projects, primarily collaborating with digital agencies and businesses across the GCC through white-label partnerships. My experience with regional marketing agency workflows provided direct, hands-on experience in agency delivery cycles, multi-breakpoint responsive builds, and bilingual web production.',
+      p2: 'I build responsive, structured websites and landing pages in GoHighLevel, translating project requirements and designs into production-ready pages with visual clarity and solid organization. When native builder constraints arise, I write clean HTML, CSS, and JavaScript to deliver the exact layout and interactions required.',
       p3: 'I collaborate flexibly under several working models: full-time employment within a company or agency, contract or project-based work, freelance development, and white-label production support for digital agencies and marketing studios.',
       evolutionTitle: 'Professional Trajectory',
       evolutionSteps: [
-        { phase: '01', title: 'Kuwait Agency Production', desc: 'Hands-on delivery with a Kuwait-based marketing agency on client websites and agency workflows.' },
-        { phase: '02', title: 'GoHighLevel Development', desc: 'Translating approved Figma & XD designs into responsive, multi-breakpoint website builds with CMS architecture.' },
+        { phase: '01', title: 'Agency Production Workflows', desc: 'Hands-on delivery with marketing agencies on client websites, responsive builds, and agency workflows.' },
+        { phase: '02', title: 'GoHighLevel Development', desc: 'Building responsive website pages and landing pages with reusable section architecture.' },
         { phase: '03', title: 'Custom Code & Bilingual UX', desc: 'Extending builds with bespoke HTML/CSS/JS, full Arabic RTL layout parity, and SEO foundations.' },
       ],
       ctaAbout: 'More About My Approach',
@@ -176,7 +176,7 @@ export const TRANSLATIONS = {
 
     // Footer
     footer: {
-      brandDesc: 'GoHighLevel Website Developer providing responsive production builds, custom HTML/CSS/JS, and Arabic RTL implementation for agencies and companies across Kuwait and the GCC.',
+      brandDesc: 'GoHighLevel Website Developer providing responsive production builds, custom HTML/CSS/JS, and Arabic RTL implementation for agencies, studios, and marketing teams across the GCC.',
       navHeading: 'Navigation',
       servicesHeading: 'Specializations',
       contactHeading: 'Direct Contact',
@@ -198,14 +198,14 @@ export const TRANSLATIONS = {
       clientWorkTitle: 'Client Projects',
       conceptsTitle: 'Selected Front-End Concepts',
       clientProjectLabel: 'Client Project',
-      conceptProjectLabel: 'Front-End Concept',
+      conceptProjectLabel: 'Concept Project',
       filterAll: 'All Projects',
       filterCommercial: 'Commercial & Contracting',
       filterAutomotive: 'Automotive & Detailing',
       filterHospitality: 'Hospitality & Dining',
       filterServices: 'Consumer & Health Services',
       filterFintech: 'Fintech & SaaS Concepts',
-      platformHonestyNotice: 'Client websites were delivered through white-label agency partnerships for businesses in Kuwait and the GCC. Concepts are self-initiated front-end builds and are presented separately from client work.',
+      platformHonestyNotice: 'Client websites were delivered through white-label agency partnerships for businesses across the GCC. Concepts are self-initiated front-end builds and are presented separately from client work.',
       screenshotDisclosure: 'Figures, brand statements, and copy shown in project previews reflect client-provided material and are not independently verified outcomes.',
     },
 
@@ -213,7 +213,7 @@ export const TRANSLATIONS = {
     servicesPage: {
       eyebrow: 'Development Services',
       headline: 'GoHighLevel & Custom Front-End Development.',
-      subtext: 'Production website implementation for agencies, studios, and businesses—from approved Figma/XD designs through responsive, bilingual launch.',
+      subtext: 'Production website development for agencies, studios, and businesses—delivering responsive, visually refined, and bilingual websites in GoHighLevel.',
       idealForLabel: 'Ideal For:',
       deliverablesLabel: 'Key Deliverables:',
       ctaService: 'Discuss This Service',
@@ -223,7 +223,7 @@ export const TRANSLATIONS = {
     // About Page
     aboutPage: {
       eyebrow: 'About the Developer',
-      headline: 'GoHighLevel Developer with Kuwait & GCC Agency Experience.',
+      headline: 'GoHighLevel Developer for Marketing Agencies & Teams Across the GCC.',
       intro: 'I collaborate with digital agencies, creative studios, and companies to turn approved designs into clean, responsive, and maintainable production websites. Flexible across full-time employment, contract work, and white-label agency delivery.',
       snapshotTitle: 'Professional Snapshot',
       snapshotExperience: 'Website Experience',
@@ -234,7 +234,7 @@ export const TRANSLATIONS = {
       snapshotAgencyExperience: 'Collaboration Modes',
       snapshotExperienceValue: '2+ years in website development',
       snapshotProjectsValue: '16+ website projects',
-      snapshotRegionalValue: 'Kuwait & GCC commercial projects',
+      snapshotRegionalValue: 'GCC agency & commercial projects',
       snapshotLanguagesValue: 'Arabic — Native | English — Written Professional Communication',
       snapshotSpecializationValue: 'GoHighLevel & Custom HTML/CSS/JS',
       snapshotAgencyValue: 'Full-Time, Contract, Freelance & White-Label',
@@ -243,8 +243,8 @@ export const TRANSLATIONS = {
       principles: [
         {
           number: '01',
-          title: 'Execute Approved Designs with Precision',
-          desc: 'I translate Figma and Adobe XD files into exact web implementations, respecting layout hierarchy, typography tokens, and design intent while clarifying ambiguities early.',
+          title: 'Execute Websites with Visual Precision',
+          desc: 'I build production websites with careful attention to layout hierarchy, typography, visual balance, and business goals while clarifying technical requirements early.',
         },
         {
           number: '02',
@@ -259,7 +259,7 @@ export const TRANSLATIONS = {
         {
           number: '04',
           title: 'Build for Maintainability & Performance',
-          desc: 'I utilize structured CMS collections, clean class naming, semantic HTML, and lightweight custom code so sites remain easy for teams and clients to update.',
+          desc: 'I utilize structured page sections, clean layout hierarchy, semantic HTML, and lightweight custom code so sites remain easy for teams and clients to update.',
         },
       ],
     },
@@ -286,10 +286,10 @@ export const TRANSLATIONS = {
       companyLabel: 'Company / Agency Name',
       companyPlaceholder: 'e.g. Horizon Digital Agency',
       formPhoneLabel: 'WhatsApp / Phone (Optional)',
-      phonePlaceholder: '+965 XXXXXXXX',
+      phonePlaceholder: '+[Country Code] [Phone Number]',
       typeLabel: 'Project / Collaboration Type',
       typeOptions: [
-        'GoHighLevel website development (Figma to GoHighLevel)',
+        'GoHighLevel website development',
         'GoHighLevel website or landing page development',
         'Custom HTML, CSS or JavaScript implementation',
         'Bilingual Arabic RTL & English LTR website',
@@ -331,11 +331,12 @@ export const TRANSLATIONS = {
       nextProjectLink: 'View Case Study',
       clientProject: 'Client Project',
       conceptProject: 'Front-End Concept',
-      roleLabel: 'Role & Scope',
+      roleLabel: 'Role',
       industryLabel: 'Industry',
       locationLabel: 'Location',
       languagesLabel: 'Language Scope',
-      platformLabel: 'Delivery Model',
+      platformLabel: 'Platform',
+      deliveryLabel: 'Delivery Model',
       visitLiveSite: 'View Live Website',
       nextProject: 'Next Project',
       ctaTitle: 'Need development support for a similar build?',
@@ -352,31 +353,31 @@ export const TRANSLATIONS = {
       about: 'عن أحمد',
       contact: 'تواصل معي',
       cta: 'ابدأ مشروعك',
-      whiteLabelBadge: 'مطورGoHighLevel • شريك الوكالات',
+      whiteLabelBadge: 'مطور GoHighLevel • شريك الوكالات',
       languageLabel: 'English',
     },
 
     // Hero Section
     hero: {
       badge: 'مطور مواقع GoHighLevel',
-      headlineStart: 'مطور مواقع',
+      headlineStart: 'مطور مواقع GoHighLevel',
       headlineAccent: 'للوكالات',
-      headlineEnd: 'وشركات الخليج.',
-      subtext: 'أقدّم خدمات تنفيذ المواقع للوكالات بنظام White-Label باستخدام GoHighLevel، مع ضبط التجاوب وإضافة التخصيصات البرمجية عند الحاجة. كما أنفّذ المواقع باللغتين العربية والإنجليزية، مع الالتزام بالتصميم المعتمد ومتطلبات كل مشروع.',
+      headlineEnd: 'وفرق التسويق في الخليج.',
+      subtext: 'أبني مواقع وصفحات هبوط احترافية وموجهة للأعمال عبر GoHighLevel، تجمع بين التخطيط البصري المدروس، وتنظيم المحتوى، واختيار الصور المناسبة، والتطوير المتجاوب باللغتين العربية والإنجليزية، مع كود مخصص عند الحاجة.',
       ctaWork: 'استعراض الأعمال المختارة',
       ctaContact: 'ناقش فرص التعاون',
       credibilityLine: 'أكثر من عامين في تطوير المواقع • 16+ مشروع موقع إلكتروني • خبرة في وكالات الخليج',
       statusAvailable: 'متاح للتوظيف الكامل، والعقود، وشراكات White-Label',
-      featuredDescription: 'موقع لشركة كويتية نُفذ بتخطيطات متجاوبة باللغتين العربية RTL والإنجليزية LTR. الأرقام في المعاينة تمثل محتوى العميل.',
+      featuredDescription: 'موقع تجاري متجاوب نُفذ باللغتين العربية RTL والإنجليزية LTR لشركة بالمنطقة. الأرقام في المعاينة تمثل محتوى العميل.',
       customCodeBadge: 'تطوير مخصص',
       customCodeDescription: 'HTML وCSS وJavaScript لتوسيع التخطيطات والتفاعلات بما يتجاوز إمكانات المنصة.',
-      regionalProof: 'تشمل مشاريع لشركات في الكويت والخليج',
+      regionalProof: 'تنفيذ مواقع للوكالات والشركات في دول الخليج',
       metrics: {
         projectsValue: '+16',
         projectsLabel: 'مشروع موقع إلكتروني',
         expValue: '+2',
         expLabel: 'أعوام في تطوير المواقع',
-        gccValue: 'شركات الخليج',
+        gccValue: 'وكالات الخليج',
         gccLabel: 'خبرة في مشاريع المنطقة',
         customCodeValue: 'HTML/CSS/JS',
         customCodeLabel: 'تطوير واجهات مخصص',
@@ -387,12 +388,12 @@ export const TRANSLATIONS = {
     workSection: {
       eyebrow: 'أعمال مختارة',
       headline: 'مواقع إلكترونية جاهزة للإنتاج نُفذت لمتطلبات واقعية.',
-      subtext: 'مواقع نُفذت لشركات في الكويت والخليج، تشمل أعمالاً أُنجزت لصالح وكالات بنظام White-Label ونماذج واجهات برمجية. تعكس الأرقام في المعاينات محتوى أصحاب الأعمال.',
+      subtext: 'مواقع نُفذت لوكالات وشركات في منطقة الخليج، تشمل أعمالاً أُنجزت بنظام White-Label ونماذج واجهات برمجية. تعكس الأرقام في المعاينات محتوى أصحاب الأعمال.',
       highlightLabel: 'نطاق التنفيذ:',
       viewAll: 'استعراض كافة المشاريع والنماذج',
       viewCaseStudy: 'استكشف دراسة الحالة',
       viewLiveDemo: 'معاينة الموقع مباشرة',
-      platformLabel: 'نموذج التنفيذ',
+      platformLabel: 'المنصة',
       industryLabel: 'القطاع',
       locationLabel: 'الموقع',
       bilingualBadge: 'عربي RTL وإنجليزي LTR',
@@ -402,7 +403,7 @@ export const TRANSLATIONS = {
     specialization: {
       eyebrow: 'القدرات والخبرات الأساسية',
       headline: 'من تسليم التصميم إلى الإطلاق المباشر.',
-      subtext: 'تطوير مواقعGoHighLevel، وبرمجة الواجهات المخصصة، وخبرة التنفيذ ثنائي اللغة للوكالات والفرق الداخلية.',
+      subtext: 'تطوير مواقع GoHighLevel، وبرمجة الواجهات المخصصة، وخبرة التنفيذ ثنائي اللغة للوكالات والفرق الداخلية.',
       capabilityLabel: 'القدرة الأساسية',
       items: [
         {
@@ -432,15 +433,15 @@ export const TRANSLATIONS = {
     differentiator: {
       eyebrow: 'منهجية التطوير',
       headline: 'إتقان منصات المواقع مدعوماً بكود مخصص عند الحاجة.',
-      subtext: 'أنفذ التصاميم المعتمدة علىGoHighLevel، وأوظف HTML وCSS وJavaScript المخصص عندما يتطلب التصميم أو التفاعل حلولاً تتجاوز الإمكانات الافتراضية للمنصة.',
+      subtext: 'أنفذ التصاميم المعتمدة على GoHighLevel، وأوظف HTML وCSS وJavaScript المخصص عندما يتطلب التصميم أو التفاعل حلولاً تتجاوز الإمكانات الافتراضية للمنصة.',
       leftCardTitle: 'تطوير GoHighLevel',
-      leftCardBadge: 'من التصميم إلى المنصة',
-      leftCardDescription: 'تحويل عالي الدقة لتصاميم Figma وAdobe XD المعتمدة إلى مواقع إلكترونية متجاوبة.',
+      leftCardBadge: 'التخطيط والبنية البصرية',
+      leftCardDescription: 'بناء وتطوير مواقع وصفحات هبوط متجاوبة عالية الدقة داخل GoHighLevel.',
       leftCardBullets: [
-        'تنفيذ تصاميم Figma وAdobe XD إلى مواقع جاهزة للإنتاج',
+        'تطوير مواقع وصفحات هبوط متجاوبة داخل بيئة GoHighLevel',
         'تخطيطات متجاوبة تراعي نقاط التوقف للهواتف والأجهزة اللوحية والحواسيب',
-        'هيكلة مجموعات CMS وقوالب ديناميكية وأقسام قابلة لإعادة الاستخدام',
-        'تنسيق سلس يندمج مع آليات المراجعة والتعديل في الوكالات',
+        'أقسام وقوالب صفحات قابلة لإعادة الاستخدام وتخطيطات منظمة',
+        'تنسيق سلس يندمج مع آليات المراجعة والتسليم في الوكالات',
       ],
       rightCardTitle: 'كود الواجهات المخصص',
       rightCardBadge: 'HTML / CSS / JS',
@@ -456,9 +457,9 @@ export const TRANSLATIONS = {
 
     // GCC / Arabic Section
     gcc: {
-      eyebrow: 'خبرة في مشاريع الكويت والخليج',
+      eyebrow: 'خبرة في مشاريع الخليج',
       headline: 'تنفيذ مواقع ثنائية اللغة مهيأة لأسواق المنطقة.',
-      subtext: 'تمنحني الخبرة العملية في تنفيذ مشاريع لشركات كويتية وخليجية عبر شراكات الوكالات فهماً دقيقاً لمتطلبات الواجهات العربية RTL، وتناسقها مع الإنجليزية LTR، ومسارات التواصل المفضلة في المنطقة.',
+      subtext: 'تمنحني الخبرة العملية في تنفيذ مشاريع لشركات ووكالات في دول الخليج فهماً دقيقاً لمتطلبات الواجهات العربية RTL، وتناسقها مع الإنجليزية LTR، ومسارات التواصل المفضلة في المنطقة.',
       features: [
         {
           title: 'تخطيطات عربية RTL أصيلة',
@@ -477,7 +478,7 @@ export const TRANSLATIONS = {
           desc: 'تنفيذ متوازن يضمن تطابق هوية الموقع واتزان التخطيط بين النسختين العربية والإنجليزية عبر كافة الأجهزة.',
         },
       ],
-      proofLocation: 'الكويت • الخليج',
+      proofLocation: 'الخليج العربي • تنفيذ إقليمي',
       proofExperience: '16+ مشروع موقع إلكتروني مُنفّذ',
     },
 
@@ -493,14 +494,14 @@ export const TRANSLATIONS = {
     // About / Story Section
     aboutSection: {
       eyebrow: 'الخلفية المهنية',
-      headline: 'مطورGoHighLevel يدعم فرق الوكالات والشركات.',
-      p1: 'أمتلك خبرة تتجاوز عامين في تطوير المواقع الإلكترونية، وأسهمت في تنفيذ أكثر من 16 مشروع موقع إلكتروني، نُفّذ معظمها لصالح شركات في الكويت والخليج عبر شراكات عمل غير معلن (White-label) مع وكالة تسويق كويتية. منحتني هذه الخبرة العملية دراية عميقة بسير العمل داخل الوكالات، والتسليم في المواعيد المحددة، ومعايير الويب ثنائية اللغة.',
-      p2: 'أحوّل تصاميم Figma وAdobe XD المعتمدة إلى مواقع متجاوبة ومنظمة علىGoHighLevel. وعندما تظهر قيود في المنصة، أكتب كود HTML وCSS وJavaScript نظيفاً لتنفيذ التخطيط والتفاعلات المطلوبة بدقة.',
+      headline: 'مطور GoHighLevel يدعم فرق الوكالات والشركات.',
+      p1: 'أمتلك خبرة تتجاوز عامين في تطوير المواقع الإلكترونية، وأسهمت في تنفيذ أكثر من 16 مشروع موقع إلكتروني، بالتعاون مع وكالات تسويق وشركات في دول الخليج عبر شراكات عمل غير معلن (White-label). منحتني هذه الخبرة العملية دراية عميقة بسير العمل داخل الوكالات، والتسليم في المواعيد المحددة، ومعايير الويب ثنائية اللغة.',
+      p2: 'أبني مواقع وصفحات هبوط متجاوبة ومنظمة داخل GoHighLevel، محولاً متطلبات المشروع إلى صفحات جاهزة للإنتاج مع عناية بالتنظيم البصري. وعندما تظهر قيود في المنصة، أكتب كود HTML وCSS وJavaScript نظيفاً لتنفيذ التخطيط والتفاعلات المطلوبة بدقة.',
       p3: 'أتعاون بمرونة وفق نماذج عمل متعددة: التوظيف الكامل لدى الشركات والوكالات، أو العقود ومشاريع العمل الحر، أو كشريك إنتاج غير معلن (White-label) يدعم فرق الوكالات والاستوديوهات التسويقية.',
       evolutionTitle: 'مسار الخبرة والتطور',
       evolutionSteps: [
-        { phase: '01', title: 'الإنتاج مع وكالات الكويت', desc: 'تنفيذ عملي ضمن وكالة تسويق كويتية لمواقع العملاء وسير عمل الإنتاج.' },
-        { phase: '02', title: 'تطوير GoHighLevel', desc: 'تحويل تصاميم Figma وXD إلى مواقع متجاوبة عبر مختلف الشاشات مع بنية CMS محكمة.' },
+        { phase: '01', title: 'الإنتاج مع الوكالات', desc: 'تنفيذ عملي ضمن سير عمل الوكالات التسويقية لمواقع العملاء والتسليم السريع.' },
+        { phase: '02', title: 'تطوير GoHighLevel', desc: 'بناء مواقع وصفحات هبوط متجاوبة عبر مختلف الشاشات بهيكلية أقسام قابلة لإعادة الاستخدام.' },
         { phase: '03', title: 'الكود المخصص والواجهات الثنائية', desc: 'تطوير الواجهات بكود HTML/CSS/JS مخصص، وتناسق تام للواجهات العربية RTL وأساسيات SEO.' },
       ],
       ctaAbout: 'المزيد عن فلسفة العمل والمنهجية',
@@ -520,7 +521,7 @@ export const TRANSLATIONS = {
 
     // Footer
     footer: {
-      brandDesc: 'مطور مواقع GoHighLevel يقدم تنفيذاً متجاوباً وجاهزاً للإنتاج، وكود HTML/CSS/JS مخصص، وواجهات عربية RTL للوكالات والشركات في الكويت والخليج.',
+      brandDesc: 'مطور مواقع GoHighLevel يقدم تنفيذاً متجاوباً وجاهزاً للإنتاج، مع كود مخصص وواجهات عربية RTL للوكالات والاستوديوهات وفرق التسويق في دول الخليج.',
       navHeading: 'روابط سريعة',
       servicesHeading: 'التخصصات الأساسية',
       contactHeading: 'قنوات التواصل المباشر',
@@ -542,14 +543,14 @@ export const TRANSLATIONS = {
       clientWorkTitle: 'مشاريع العملاء',
       conceptsTitle: 'نماذج واجهات برمجية مختارة',
       clientProjectLabel: 'مشروع عميل',
-      conceptProjectLabel: 'نموذج واجهة تفاعلية',
+      conceptProjectLabel: 'مشروع تجريبي (Concept)',
       filterAll: 'كافة المشاريع',
       filterCommercial: 'المقاولات والشركات',
       filterAutomotive: 'خدمات وصيانة السيارات',
       filterHospitality: 'المطاعم والضيافة',
       filterServices: 'الخدمات المتنقلة والرعاية',
       filterFintech: 'التقنية المالية والساس',
-      platformHonestyNotice: 'نُفذت مشاريع العملاء عبر شراكات عمل غير معلن (White-label) مع وكالات لخدمة شركات في الكويت والخليج. النماذج التجريبية هي أعمال واجهات برمجية ذاتية تُعرض بشكل منفصل عن مشاريع العملاء.',
+      platformHonestyNotice: 'نُفذت مشاريع العملاء عبر شراكات عمل غير معلن (White-label) مع وكالات لخدمة شركات في دول الخليج. النماذج التجريبية هي أعمال واجهات برمجية ذاتية تُعرض بشكل منفصل عن مشاريع العملاء.',
       screenshotDisclosure: 'الأرقام والبيانات التجارية الظاهرة في معاينات المواقع تعكس محتوى أصحاب الأعمال وليست نتائج مستقلة تم التحقق منها.',
     },
 
@@ -557,7 +558,7 @@ export const TRANSLATIONS = {
     servicesPage: {
       eyebrow: 'خدمات التطوير',
       headline: 'تطوير GoHighLevel وبرمجة الواجهات المخصصة.',
-      subtext: 'تنفيذ مواقع جاهزة للإنتاج للوكالات والاستوديوهات والشركات—من تصاميم Figma وXD المعتمدة إلى إطلاق متجاوب ثنائي اللغة.',
+      subtext: 'تنفيذ مواقع جاهزة للإنتاج للوكالات والاستوديوهات والشركات—تنفيذ مواقع متجاوبة ومتقنة بصرياً وثنائية اللغة على GoHighLevel.',
       idealForLabel: 'الأنسب لـ:',
       deliverablesLabel: 'أبرز المخرجات:',
       ctaService: 'ناقش هذه الخدمة',
@@ -567,7 +568,7 @@ export const TRANSLATIONS = {
     // About Page
     aboutPage: {
       eyebrow: 'عن المطور',
-      headline: 'مطور GoHighLevel بخبرة عملية مع وكالات الكويت والخليج.',
+      headline: 'مطور GoHighLevel لوكالات وفرق التسويق في دول الخليج.',
       intro: 'أتعاون مع وكالات التسويق، والاستوديوهات الرقمية، والشركات لتحويل التصاميم المعتمدة إلى مواقع متجاوبة عالية الأداء وسهلة الصيانة. متاح للتوظيف الكامل، وعقود المشاريع، وشراكات الإنتاج بنظام White-Label.',
       snapshotTitle: 'نبذة مهنية',
       snapshotExperience: 'خبرة تطوير المواقع',
@@ -578,7 +579,7 @@ export const TRANSLATIONS = {
       snapshotAgencyExperience: 'أنماط التعاون',
       snapshotExperienceValue: 'أكثر من عامين في تطوير المواقع',
       snapshotProjectsValue: '16+ مشروع موقع إلكتروني',
-      snapshotRegionalValue: 'مشاريع تجارية في الكويت والخليج',
+      snapshotRegionalValue: 'مشاريع وكالات وشركات في دول الخليج',
       snapshotLanguagesValue: 'العربية — اللغة الأم | الإنجليزية — تواصل مهني متقن',
       snapshotSpecializationValue: 'GoHighLevel وكود HTML/CSS/JS مخصص',
       snapshotAgencyValue: 'دوام كامل، عقود مشاريع، عمل حر، وWhite-label',
@@ -587,8 +588,8 @@ export const TRANSLATIONS = {
       principles: [
         {
           number: '01',
-          title: 'تنفيذ التصاميم المعتمدة بدقة عالية',
-          desc: 'أحوّل ملفات Figma وAdobe XD إلى تنفيذ فعلي مطابق للتصميم، مع احترام التسلسل البصري والخطوط وتوضيح أي تفاصيل مبكراً.',
+          title: 'تنفيذ المواقع بدقة بصرية متقنة',
+          desc: 'أنفذ المواقع باهتمام دقيق بالتسلسل الهرمي البصري والتناسق الطباعي وتكامل المحتوى بما يخدم أهداف النشاط التجاري.',
         },
         {
           number: '02',
@@ -603,7 +604,7 @@ export const TRANSLATIONS = {
         {
           number: '04',
           title: 'بناء مواقع قابلة للصيانة وسريعة الأداء',
-          desc: 'أعتمد مجموعات CMS منظمة، وتسميات كلاسات واضحة، وHTML دلالي وكود مخصص خفيف لتظل إدارة الموقع وتحديثه سهلة للعميل وفريق العمل.',
+          desc: 'أعتمد هيكلية أقسام منظمة، وتسميات واضحة، وHTML دلالي وكود مخصص خفيف لتظل إدارة الموقع وتحديثه سهلة لفريق العمل والعميل.',
         },
       ],
     },
@@ -630,10 +631,10 @@ export const TRANSLATIONS = {
       companyLabel: 'اسم الشركة أو الوكالة',
       companyPlaceholder: 'مثال: وكالة هورايزون الرقمية',
       formPhoneLabel: 'رقم الهاتف / الواتساب (اختياري)',
-      phonePlaceholder: '+965 XXXXXXXX',
+      phonePlaceholder: '+[كود الدولة] [رقم الهاتف]',
       typeLabel: 'نوع المشروع أو التعاون المطلوب',
       typeOptions: [
-        'تطوير موقع GoHighLevel (من Figma إلى GoHighLevel)',
+        'تطوير موقع GoHighLevel',
         'تطوير موقع أو صفحة هبوط على GoHighLevel',
         'برمجة واجهات مخصصة بـ HTML أو CSS أو JavaScript',
         'موقع ثنائي اللغة (عربي RTL وإنجليزي LTR)',
@@ -675,11 +676,12 @@ export const TRANSLATIONS = {
       nextProjectLink: 'عرض دراسة الحالة',
       clientProject: 'مشروع عميل',
       conceptProject: 'نموذج واجهة تفاعلية',
-      roleLabel: 'الدور ونطاق العمل',
+      roleLabel: 'الدور',
       industryLabel: 'القطاع',
       locationLabel: 'الموقع',
       languagesLabel: 'نطاق اللغات',
-      platformLabel: 'نموذج التنفيذ',
+      platformLabel: 'المنصة',
+      deliveryLabel: 'نموذج التنفيذ',
       visitLiveSite: 'زيارة الموقع المباشر',
       nextProject: 'المشروع التالي',
       ctaTitle: 'هل تحتاج إلى دعم تطوير لمشروع مشابه؟',

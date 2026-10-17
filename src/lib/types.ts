@@ -34,7 +34,7 @@ export interface Project {
   industry: LocalizedString;
   category: ProjectCategory;
   location: LocalizedString;
-  platform: 'GoHighLevel' | 'GoHighLevel + Custom CSS' | 'GoHighLevel + Custom Code' | 'Custom Code' | 'GoHighLevel + Custom CSS';
+  platform: 'GoHighLevel' | 'GoHighLevel + Custom CSS' | 'GoHighLevel + Custom Code' | 'Custom Code';
   platformContextNote?: LocalizedString;
   deliveryScope?: LocalizedString;
   role: LocalizedString;

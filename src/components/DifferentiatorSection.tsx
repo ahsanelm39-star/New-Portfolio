@@ -16,7 +16,7 @@ export default function DifferentiatorSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-4 mb-16">
+        <div className="max-w-3xl space-y-4 mb-16 reveal-on-scroll">
           <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.differentiator.eyebrow}
           </span>
@@ -31,8 +31,8 @@ export default function DifferentiatorSection() {
         {/* Split Screen Layer Comparison: Design Layer vs Code Layer */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
-          {/* Card 1: Webflow Native Layer */}
-          <div className="rounded-3xl bg-[#0c0f17] border border-white/10 p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-sky-400/30 transition-colors">
+          {/* Card 1: GHL Visual Layer */}
+          <div className="rounded-3xl bg-[#0c0f17] border border-white/10 p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-sky-400/30 transition-colors reveal-on-scroll stagger-1">
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center text-sky-400">
@@ -76,7 +76,7 @@ export default function DifferentiatorSection() {
           </div>
 
           {/* Card 2: Custom Code Layer */}
-          <div className="rounded-3xl bg-[#0e121c] border border-white/10 p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-sky-400/30 transition-colors">
+          <div className="rounded-3xl bg-[#0e121c] border border-white/10 p-8 sm:p-10 flex flex-col justify-between space-y-8 relative overflow-hidden group hover:border-sky-400/30 transition-colors reveal-on-scroll stagger-2">
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-400/20 flex items-center justify-center text-blue-400">
@@ -122,7 +122,7 @@ export default function DifferentiatorSection() {
         </div>
 
         {/* Central Manifesto Quote Banner */}
-        <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-sky-500/10 via-blue-500/5 to-transparent border border-sky-400/20 text-center relative overflow-hidden">
+        <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-sky-500/10 via-blue-500/5 to-transparent border border-sky-400/20 text-center relative overflow-hidden reveal-on-scroll">
           <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-tight leading-relaxed max-w-4xl mx-auto sm:leading-normal">
             {t.differentiator.quote}
           </p>

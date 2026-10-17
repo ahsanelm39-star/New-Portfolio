@@ -15,7 +15,7 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
-        <div className="max-w-3xl space-y-4 mb-20">
+        <div className="max-w-3xl space-y-4 mb-20 reveal-on-scroll">
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.aboutPage.eyebrow}
           </span>
@@ -29,7 +29,7 @@ export default function AboutPage() {
 
         {/* Narrative & Agency Background Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-start">
-          <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed reveal-on-scroll">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
               {t.aboutSection.headline}
             </h2>
@@ -40,7 +40,7 @@ export default function AboutPage() {
           </div>
 
           {/* Side Dossier: Verified Track Record */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 reveal-on-scroll stagger-1">
             <div className="p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6">
               <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-emerald-400" />
@@ -79,7 +79,7 @@ export default function AboutPage() {
 
         {/* Core Operating Principles Grid */}
         <div className="space-y-12">
-          <div className="max-w-2xl space-y-2">
+          <div className="max-w-2xl space-y-2 reveal-on-scroll">
             <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.aboutPage.eyebrow}
             </span>
@@ -89,10 +89,13 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {t.aboutPage.principles.map((principle) => (
+            {t.aboutPage.principles.map((principle, idx) => (
               <div
                 key={principle.number}
-                className="p-8 sm:p-10 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-4 hover:border-sky-400/40 transition-colors"
+                className={cn(
+                  "p-8 sm:p-10 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-4 hover:border-sky-400/40 transition-colors reveal-on-scroll",
+                  idx % 2 === 0 ? "stagger-1" : "stagger-2"
+                )}
               >
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono text-sky-400 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20">

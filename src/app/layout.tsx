@@ -4,6 +4,7 @@ import './globals.css';
 import { LanguageProvider } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollAnimationProvider from '@/components/ScrollAnimationProvider';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -104,11 +105,13 @@ export default function RootLayout({
     <html lang="en" dir="ltr" className={`${plusJakartaSans.variable} ${ibmPlexArabic.variable} ${jetbrainsMono.variable} dark`}>
       <body className="bg-[#07080a] text-slate-100 font-sans selection:bg-sky-500/25 selection:text-white relative min-h-screen flex flex-col justify-between">
         <LanguageProvider>
-          <div className="relative flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
+          <ScrollAnimationProvider>
+            <div className="relative flex flex-col min-h-screen">
+              <Navbar />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </div>
+          </ScrollAnimationProvider>
         </LanguageProvider>
       </body>
     </html>

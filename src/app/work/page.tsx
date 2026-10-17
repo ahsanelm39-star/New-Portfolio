@@ -47,7 +47,7 @@ export default function WorkPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Hero Header */}
-        <div className="max-w-3xl space-y-4 mb-14">
+        <div className="max-w-3xl space-y-4 mb-14 reveal-on-scroll">
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.workPage.eyebrow}
           </span>
@@ -60,7 +60,7 @@ export default function WorkPage() {
         </div>
 
         {/* Filter Navigation Bar */}
-        <div className="flex flex-wrap items-center gap-2 pb-8 border-b border-white/10 mb-12">
+        <div className="flex flex-wrap items-center gap-2 pb-8 border-b border-white/10 mb-12 reveal-on-scroll">
           {categories.map((cat) => {
             const isActive = activeCategory === cat.id;
             return (
@@ -84,14 +84,17 @@ export default function WorkPage() {
         {/* Project Archive Grid */}
         {projectGroups.map((group) => (
           <section key={group.id} aria-labelledby={`${group.id}-heading`} className="mb-16 last:mb-0">
-            <h2 id={`${group.id}-heading`} className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8">
+            <h2 id={`${group.id}-heading`} className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8 reveal-on-scroll">
               {group.title}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {group.projects.map((project) => (
+              {group.projects.map((project, idx) => (
             <article
               key={project.slug}
-              className="group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10 hover:-translate-y-1"
+              className={cn(
+                "group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10 hover:-translate-y-1 reveal-on-scroll",
+                `stagger-${(idx % 3) + 1}`
+              )}
             >
               <div>
                 {/* Visual Image Header */}
@@ -108,8 +111,18 @@ export default function WorkPage() {
 
                 {/* Case Intelligence Content */}
                 <div className="p-6 sm:p-7 space-y-3">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
-                    <span>{project.industry[lang]}</span>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono">
+                    <div className="flex items-center gap-1.5">
+                      <span className={cn(
+                        "px-2 py-0.5 rounded text-[10px] font-semibold border",
+                        project.projectType === 'client'
+                          ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                          : "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                      )}>
+                        {project.platform}
+                      </span>
+                      <span className="text-slate-400">{project.industry[lang]}</span>
+                    </div>
                     <span className="text-sky-400 font-medium">{project.languages[lang]}</span>
                   </div>
 
@@ -117,12 +130,17 @@ export default function WorkPage() {
                     {project.title[lang]}
                   </h2>
 
-                  <p className="text-sm sm:text-lg text-slate-400 line-clamp-3 leading-relaxed">
+                  <p className="text-sm sm:text-base text-slate-400 line-clamp-3 leading-relaxed">
                     {project.tagline[lang]}
                   </p>
 
                   {/* Technical Tags */}
                   <div className="flex flex-wrap gap-1.5 pt-2">
+                    {project.deliveryScope && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-sky-400/10 text-sky-300 border border-sky-400/20">
+                        {project.deliveryScope[lang]}
+                      </span>
+                    )}
                     {project.techTags.map((tag) => (
                       <span
                         key={tag}

@@ -14,7 +14,7 @@ export default function FinalCta() {
       {/* Ambient Radial Illumination */}
       <div className="ambient-glow-cyan w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35"></div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 reveal-on-scroll">
         
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/25 text-sky-400 text-ms font-mono">

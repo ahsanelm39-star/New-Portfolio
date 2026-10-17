@@ -39,9 +39,12 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         </div>
 
         {/* Case Study Hero Header */}
-        <header className="space-y-6 max-w-4xl mb-14">
+        <header className="space-y-6 max-w-4xl mb-14 reveal-on-scroll">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-ms font-mono text-sky-400">
+            <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-ms font-mono text-sky-400 font-semibold">
+              {project.projectType === 'client' ? t.caseStudy.clientProject : t.caseStudy.conceptProject} • {project.platform}
+            </span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-ms font-mono text-slate-300">
               {project.industry[lang]}
             </span>
           </div>
@@ -71,7 +74,16 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         </header>
 
         {/* Intelligence Metadata Dossier */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl bg-[#0c0f17] border border-white/10 mb-14 text-ms">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl bg-[#0c0f17] border border-white/10 mb-14 text-ms reveal-on-scroll">
+          <div className="space-y-1">
+            <span className="text-[11px] font-mono uppercase text-slate-500 block">
+              {t.caseStudy.platformLabel}
+            </span>
+            <span className="font-semibold text-sky-400 block font-mono">
+              {project.platform}
+            </span>
+          </div>
+
           <div className="space-y-1">
             <span className="text-[11px] font-mono uppercase text-slate-500 block">
               {t.caseStudy.roleLabel}
@@ -83,19 +95,10 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
           <div className="space-y-1">
             <span className="text-[11px] font-mono uppercase text-slate-500 block">
-              {t.caseStudy.platformLabel}
-            </span>
-            <span className="font-semibold text-sky-400 block font-mono">
-              {project.deliveryScope ? project.deliveryScope[lang] : (project.projectType === 'client' ? (lang === 'ar' ? 'تنفيذ لصالح وكالة تسويق' : 'White-Label Agency Delivery') : (lang === 'ar' ? 'نموذج واجهات مستقل' : 'Independent Front-End Concept'))}
-            </span>
-          </div>
-
-          <div className="space-y-1">
-            <span className="text-[11px] font-mono uppercase text-slate-500 block">
-              {t.caseStudy.locationLabel}
+              {t.caseStudy.deliveryLabel}
             </span>
             <span className="font-semibold text-white block">
-              {project.location[lang]}
+              {project.deliveryScope ? project.deliveryScope[lang] : (project.projectType === 'client' ? (lang === 'ar' ? 'تنفيذ لصالح وكالة تسويق' : 'White-Label Agency Delivery') : (lang === 'ar' ? 'نموذج واجهات مستقل' : 'Independent Front-End Concept'))}
             </span>
           </div>
 
@@ -110,7 +113,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         </div>
 
         {/* Featured Browser Mockup Preview */}
-        <div className="rounded-3xl bg-[#0c0f17] border border-white/10 p-2 sm:p-3 shadow-2xl mb-16 overflow-hidden">
+        <div className="rounded-3xl bg-[#0c0f17] border border-white/10 p-2 sm:p-3 shadow-2xl mb-16 overflow-hidden reveal-on-scroll">
           <div className="bg-[#08090d] px-4 py-3 rounded-t-2xl border-b border-white/10 flex items-center justify-between text-ms font-mono text-slate-500">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
@@ -155,7 +158,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           
           {/* Main Content Body (8 cols) */}
-          <div className="lg:col-span-8 space-y-12">
+          <div className="lg:col-span-8 space-y-12 reveal-on-scroll">
             
             {/* Overview Section */}
             <section className="space-y-4">
@@ -237,7 +240,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
           </div>
 
           {/* Sidebar Dossier (4 cols) */}
-          <div className="lg:col-span-4 space-y-8">
+          <div className="lg:col-span-4 space-y-8 reveal-on-scroll stagger-1">
             <div className="p-6 sm:p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6 sticky top-28">
               <h3 className="text-sm font-bold text-white font-mono uppercase tracking-wider">
                 {t.caseStudy.projectMetaTitle}
@@ -299,7 +302,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
         {/* Bottom Navigator: Next Project Preview */}
         {nextProject && (
-          <div className="pt-16 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="pt-16 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 reveal-on-scroll">
             <div>
               <span className="text-ms font-mono uppercase text-slate-500 block mb-1">
                 {t.caseStudy.nextProject}

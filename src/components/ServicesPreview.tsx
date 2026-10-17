@@ -18,7 +18,7 @@ export default function ServicesPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal-on-scroll">
           <div className="max-w-2xl space-y-3">
             <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.servicesSection.eyebrow}
@@ -42,10 +42,13 @@ export default function ServicesPreview() {
 
         {/* 4-Item Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {previewServices.map((service) => (
+          {previewServices.map((service, index) => (
             <div
               key={service.id}
-              className="p-8 sm:p-10 rounded-3xl bg-[#0c0f17] border border-white/10 hover:border-sky-400/40 transition-all duration-300 flex flex-col justify-between space-y-6 group"
+              className={cn(
+                "p-8 sm:p-10 rounded-3xl bg-[#0c0f17] border border-white/10 hover:border-sky-400/40 transition-all duration-300 flex flex-col justify-between space-y-6 group reveal-on-scroll",
+                index % 2 === 0 ? "stagger-1" : "stagger-2"
+              )}
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -85,7 +88,7 @@ export default function ServicesPreview() {
                   <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />
                 </Link>
                 <span className="text-[11px] font-mono text-slate-500">
-                  {service.isPrimaryWebflow ? 'Webflow Native' : 'Custom Implementation'}
+                  {service.id === 'go-high-level' ? 'GoHighLevel Native' : 'Custom Implementation'}
                 </span>
               </div>
 

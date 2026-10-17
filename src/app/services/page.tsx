@@ -38,7 +38,7 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
-        <div className="max-w-3xl space-y-4 mb-20">
+        <div className="max-w-3xl space-y-4 mb-20 reveal-on-scroll">
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.servicesPage.eyebrow}
           </span>
@@ -56,7 +56,7 @@ export default function ServicesPage() {
             <article
               key={service.id}
               className={cn(
-                'rounded-3xl p-8 sm:p-12 border transition-all duration-300',
+                'rounded-3xl p-8 sm:p-12 border transition-all duration-300 reveal-on-scroll',
                 service.isBackgroundExperience
                   ? 'bg-[#090b10] border-white/5 opacity-90'
                   : 'bg-[#0c0f17] border-white/10 hover:border-sky-400/30'

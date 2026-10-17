@@ -11,8 +11,8 @@ export const PROJECTS: Project[] = [
       ar: 'العواد للحلول السكنية والتجارية المتكاملة',
     },
     tagline: {
-      en: 'Responsive multi-division commercial website delivered for a Kuwait contracting solutions provider.',
-      ar: 'موقع تجاري متجاوب متعدد الأقسام نُفذ لشركة حلول ومقاولات في الكويت.',
+      en: 'Responsive multi-division commercial website delivered for a contracting solutions provider.',
+      ar: 'موقع تجاري متجاوب متعدد الأقسام نُفذ لشركة حلول ومقاولات متكاملة.',
     },
     industry: {
       en: 'Commercial & Residential Contracting',
@@ -105,8 +105,8 @@ export const PROJECTS: Project[] = [
       ar: 'مطعم النسر الفضي للمشويات والمأكولات الكويتية',
     },
     tagline: {
-      en: 'Mobile-optimized Arabic restaurant website and culinary menu presentation for a Kuwait establishment.',
-      ar: 'موقع مطعم وقائمة مأكولات باللغة العربية مهيأ للهواتف لمطعم كويتي تقليدي.',
+      en: 'Mobile-optimized Arabic restaurant website and culinary menu presentation.',
+      ar: 'موقع مطعم وقائمة مأكولات باللغة العربية مهيأ للهواتف لمطعم للمأكولات التقليدية والمشويات.',
     },
     industry: {
       en: 'Culinary, Hospitality & Restaurant',
@@ -199,8 +199,8 @@ export const PROJECTS: Project[] = [
       ar: 'مركز الابتكار المتخصص لصيانة السيارات',
     },
     tagline: {
-      en: 'Comprehensive Arabic automotive service center website and inquiry portal in Kuwait.',
-      ar: 'موقع وبوابة خدمات لمركز صيانة وهندسة سيارات متخصص في الكويت.',
+      en: 'Comprehensive Arabic automotive service center website and inquiry portal.',
+      ar: 'موقع وبوابة خدمات لمركز صيانة وهندسة سيارات متخصص.',
     },
     industry: {
       en: 'Automotive Engineering & Maintenance',
@@ -293,8 +293,8 @@ export const PROJECTS: Project[] = [
       ar: 'سفير الأمراء للمستلزمات الرجالية والأزياء التراثية',
     },
     tagline: {
-      en: 'Arabic retail showcase and product catalog presentation for a Kuwait traditional menswear brand.',
-      ar: 'معرض منتجات ودليل أزياء رجالية تراثية باللغة العربية لمتجر تجزئة كويتي.',
+      en: 'Arabic retail showcase and product catalog presentation for a traditional menswear brand.',
+      ar: 'معرض منتجات ودليل أزياء رجالية تراثية باللغة العربية لمتجر تجزئة متقدم.',
     },
     industry: {
       en: 'Retail, Fashion & Heritage Attire',
@@ -387,8 +387,8 @@ export const PROJECTS: Project[] = [
       ar: 'خدمة غسيل السيارات المتنقل في الكويت (A2Z Wash)',
     },
     tagline: {
-      en: 'Fast-booking service website and package showcase for an on-demand mobile car detailing operator in Kuwait.',
-      ar: 'موقع لطلب وباقات غسيل السيارات المتنقل لخدمة عناية منزلية بالسيارات في الكويت.',
+      en: 'Fast-booking service website and package showcase for an on-demand mobile car detailing operator.',
+      ar: 'موقع لطلب وباقات غسيل السيارات المتنقل لخدمة عناية بالسيارات.',
     },
     industry: {
       en: 'On-Demand Consumer Services & Detailing',

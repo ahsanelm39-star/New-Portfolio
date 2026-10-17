@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Hero Header */}
-        <div className="max-w-3xl space-y-4 mb-16">
+        <div className="max-w-3xl space-y-4 mb-16 reveal-on-scroll">
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.contactPage.eyebrow}
           </span>
@@ -29,7 +29,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left Column: Direct Channels & Guarantees (5 cols) */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 reveal-on-scroll stagger-1">
             
             {/* Direct Channels Card */}
             <div className="p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6">
@@ -127,7 +127,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column: Project Intake Form (7 cols) */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 reveal-on-scroll stagger-2">
             <ContactForm />
           </div>
 

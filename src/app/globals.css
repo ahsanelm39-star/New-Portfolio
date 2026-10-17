@@ -126,3 +126,44 @@ select:focus-visible {
     outline: 2px solid #38bdf8;
     outline-offset: 2px;
 }
+
+/* Subtle Scroll Reveal Animation System */
+/* Fallback: Elements are fully visible by default for SSR, indexing, and JS-disabled environments */
+.reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+}
+
+/* Armed for scroll entrance once JS initializes elements below the fold */
+.reveal-on-scroll.animate-ready {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 500ms cubic-bezier(0.16, 1, 0.3, 1), transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+/* Triggered on viewport intersection */
+.reveal-on-scroll.animate-ready.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card & item stagger sequence (60ms - 80ms intervals) */
+.reveal-on-scroll.stagger-1 { transition-delay: 70ms; }
+.reveal-on-scroll.stagger-2 { transition-delay: 140ms; }
+.reveal-on-scroll.stagger-3 { transition-delay: 210ms; }
+.reveal-on-scroll.stagger-4 { transition-delay: 280ms; }
+.reveal-on-scroll.stagger-5 { transition-delay: 350ms; }
+.reveal-on-scroll.stagger-6 { transition-delay: 420ms; }
+
+/* Prefers-reduced-motion: zero transitions and instant full visibility */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll,
+    .reveal-on-scroll.animate-ready,
+    .reveal-on-scroll.animate-ready.revealed {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        will-change: auto !important;
+    }
+}

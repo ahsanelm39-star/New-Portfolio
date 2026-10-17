@@ -16,7 +16,7 @@ export default function AboutStoryPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Narrative Column (7 cols) */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-6 reveal-on-scroll">
             <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.aboutSection.eyebrow}
             </span>
@@ -43,7 +43,7 @@ export default function AboutStoryPreview() {
           </div>
 
           {/* Evolution Steps Column (5 cols) */}
-          <div className="lg:col-span-5 space-y-4">
+          <div className="lg:col-span-5 space-y-4 reveal-on-scroll stagger-1">
             <div className="p-8 rounded-3xl bg-[#0c0f17] border border-white/10 space-y-6">
               <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono flex items-center gap-2">
                 <History className="w-4 h-4 text-sky-400" />

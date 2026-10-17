@@ -20,7 +20,7 @@ export default function GccExperienceSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-4 mb-16">
+        <div className="max-w-3xl space-y-4 mb-16 reveal-on-scroll">
           <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.gcc.eyebrow}
           </span>
@@ -37,7 +37,10 @@ export default function GccExperienceSection() {
           {t.gcc.features.map((feature, idx) => (
             <div
               key={idx}
-              className="p-8 rounded-3xl bg-[#0e121c] border border-white/10 hover:border-sky-400/40 transition-all duration-300 space-y-4 group"
+              className={cn(
+                "p-8 rounded-3xl bg-[#0e121c] border border-white/10 hover:border-sky-400/40 transition-all duration-300 space-y-4 group reveal-on-scroll",
+                idx % 2 === 0 ? "stagger-1" : "stagger-2"
+              )}
             >
               <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 {iconList[idx]}
@@ -55,7 +58,7 @@ export default function GccExperienceSection() {
         </div>
 
         {/* Regional Proof Bar */}
-        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#06080d] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#06080d] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 reveal-on-scroll">
           <div className="flex items-center gap-4 text-ms font-mono text-slate-400">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
             <span>{t.gcc.proofLocation}</span>

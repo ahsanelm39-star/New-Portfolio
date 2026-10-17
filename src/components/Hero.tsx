@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
           </div>
           {/* Cinematic Visual Centerpiece: Floating Layered Architecture Mockup */}
-          <div className="mt-14 lg:mt-20 relative max-md:hidden">
+          <div className="mt-14 lg:mt-20 relative max-md:hidden reveal-on-scroll">
             
             {/* Main Architectural Browser Frame */}
             <div className="relative rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 bg-gradient-to-b from-white/15 via-white/5 to-white/0 border border-white/10 shadow-2xl shadow-black/80 backdrop-blur-sm overflow-hidden group">
@@ -164,7 +164,7 @@ export default function Hero() {
           </div>
           {/* status */}
           <div className="md:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 pt-10 md:border-t border-white/10">
-            <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+            <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5 reveal-on-scroll stagger-1">
               <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.projectsValue}
               </div>
@@ -173,7 +173,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+            <div className="p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5 reveal-on-scroll stagger-2">
               <div className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.expValue}
               </div>
@@ -182,7 +182,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+            <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5 reveal-on-scroll stagger-3">
               <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.customCodeValue}
               </div>
@@ -190,7 +190,7 @@ export default function Hero() {
                 {t.hero.metrics.customCodeLabel}
               </div>
             </div>
-            <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+            <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5 reveal-on-scroll stagger-4">
               <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.gccValue}
               </div>

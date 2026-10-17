@@ -25,7 +25,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal-on-scroll">
           <div className="max-w-2xl space-y-3">
             <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.workSection.eyebrow}
@@ -52,7 +52,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
           
           {/* Card 1: Featured Flagship Case Study (Wide Architectural Spotlight) */}
           {heroProject && (
-            <article className="group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10">
+            <article className="group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10 reveal-on-scroll">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch">
                 
                 {/* Visual Image Presentation (7 cols) */}
@@ -70,8 +70,18 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                 {/* Narrative & Case Intelligence (5 cols) */}
                 <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
-                      <span>{heroProject.industry[lang]}</span>
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className={cn(
+                          "px-2.5 py-0.5 rounded-full text-[11px] font-semibold border",
+                          heroProject.projectType === 'client'
+                            ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                            : "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                        )}>
+                          {heroProject.projectType === 'client' ? t.workPage.clientProjectLabel : t.workPage.conceptProjectLabel} • {heroProject.platform}
+                        </span>
+                        <span className="text-slate-400">{heroProject.industry[lang]}</span>
+                      </div>
                       <span className="text-sky-400 font-semibold">{heroProject.languages[lang]}</span>
                     </div>
 
@@ -85,8 +95,13 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
 
                     {/* Architectural Highlights */}
                     <div className="pt-2 space-y-2">
-                      <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-                        {t.workSection.highlightLabel}
+                      <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider flex items-center justify-between">
+                        <span>{t.workSection.highlightLabel}</span>
+                        {heroProject.deliveryScope && (
+                          <span className="text-sky-400 normal-case font-mono text-[11px]">
+                            {heroProject.deliveryScope[lang]}
+                          </span>
+                        )}
                       </div>
                       <ul className="space-y-1.5 text-xs text-slate-300">
                         {heroProject.designDecisions[lang].slice(0, 2).map((item, idx) => (
@@ -133,7 +148,10 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
             {secondaryProjects.map((project, index) => (
               <article
                 key={project.slug}
-                className="group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10"
+                className={cn(
+                  "group rounded-3xl bg-[#0c0f17] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-500 hover:border-sky-400/40 hover:shadow-sky-500/10 reveal-on-scroll",
+                  index % 2 === 0 ? "stagger-1" : "stagger-2"
+                )}
               >
                 <div>
                   {/* Project Image Frame */}
@@ -150,9 +168,19 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
 
                   {/* Project Intelligence */}
                   <div className="p-6 sm:p-8 space-y-3">
-                    <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
-                      <span>{project.industry[lang]}</span>
-                      <span className="text-sky-400">{project.languages[lang]}</span>
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className={cn(
+                          "px-2 py-0.5 rounded text-[10px] font-semibold border",
+                          project.projectType === 'client'
+                            ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                            : "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                        )}>
+                          {project.platform}
+                        </span>
+                        <span className="text-slate-400 text-[11px]">{project.industry[lang]}</span>
+                      </div>
+                      <span className="text-sky-400 text-[11px]">{project.languages[lang]}</span>
                     </div>
 
                     <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-sky-300 transition-colors">
@@ -165,6 +193,11 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
 
                     {/* Tags */}
                     <div className="flex flex-wrap gap-1.5 pt-2">
+                      {project.deliveryScope && (
+                        <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-sky-400/10 border border-sky-400/20 text-sky-300">
+                          {project.deliveryScope[lang]}
+                        </span>
+                      )}
                       {project.techTags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}

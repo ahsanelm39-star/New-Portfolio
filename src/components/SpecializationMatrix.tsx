@@ -22,7 +22,7 @@ export default function SpecializationMatrix() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-4 mb-16">
+        <div className="max-w-3xl space-y-4 mb-16 reveal-on-scroll">
           <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.specialization.eyebrow}
           </span>
@@ -39,7 +39,10 @@ export default function SpecializationMatrix() {
           {t.specialization.items.map((item, index) => (
             <div
               key={index}
-              className="group p-8 rounded-3xl bg-[#0e121c] border border-white/10 hover:border-sky-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/5 flex flex-col justify-between"
+              className={cn(
+                "group p-8 rounded-3xl bg-[#0e121c] border border-white/10 hover:border-sky-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/5 flex flex-col justify-between reveal-on-scroll",
+                `stagger-${(index % 3) + 1}`
+              )}
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
