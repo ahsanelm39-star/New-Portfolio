@@ -117,7 +117,7 @@ export default function WorkPage() {
                     {project.title[lang]}
                   </h2>
 
-                  <p className="text-xs sm:text-sm text-slate-400 line-clamp-3 leading-relaxed">
+                  <p className="text-sm sm:text-lg text-slate-400 line-clamp-3 leading-relaxed">
                     {project.tagline[lang]}
                   </p>
 

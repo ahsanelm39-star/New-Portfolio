@@ -407,10 +407,6 @@ export const TRANSLATIONS = {
       items: [
         {
           title: 'تطوير مواقع GoHighLevel',
-          desc: 'تنفيذ تصاميم Figma وAdobe XD على GoHighLevel، وتطوير متجاوب عبر كافة الشاشات، وهيكلة CMS مرنة وسهلة الإدارة.',
-        },
-        {
-          title: 'تطوير مواقع GoHighLevel',
           desc: 'تطوير صفحات المواقع وصفحات الهبوط داخل GoHighLevel، وهيكلة النماذج والتنسيقات لتطابق التصاميم المعتمدة بدقة.',
         },
         {

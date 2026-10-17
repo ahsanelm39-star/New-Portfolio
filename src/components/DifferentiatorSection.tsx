@@ -17,10 +17,10 @@ export default function DifferentiatorSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4 mb-16">
-          <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+          <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.differentiator.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight lg:leading-snug">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white max-lg:leading-snug lg:leading-tight">
             {t.differentiator.headline}
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -38,7 +38,7 @@ export default function DifferentiatorSection() {
                 <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center text-sky-400">
                   <Layers className="w-6 h-6" />
                 </div>
-                <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-mono text-sky-400 font-semibold">
+                <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-ms font-mono text-sky-400 font-semibold">
                   {t.differentiator.leftCardBadge}
                 </span>
               </div>
@@ -47,12 +47,12 @@ export default function DifferentiatorSection() {
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                   {t.differentiator.leftCardTitle}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-400">
+                <p className="text-ms sm:text-sm text-slate-400">
                   {t.differentiator.leftCardDescription}
                 </p>
               </div>
 
-              <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+              <ul className="space-y-3 text-ms sm:text-sm text-slate-300">
                 {t.differentiator.leftCardBullets.map((bullet, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-sky-400 mt-0.5 shrink-0" />
@@ -68,7 +68,7 @@ export default function DifferentiatorSection() {
                 <span>DOM Tree</span>
                 <span className="text-sky-400">Section &gt; Container &gt; Grid</span>
               </div>
-              <div className="text-xs text-slate-300">
+              <div className="text-ms text-slate-300">
                 <span className="text-sky-400">.hero-container</span> &#123; display: grid; gap: 3rem; &#125;
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function DifferentiatorSection() {
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-400/20 flex items-center justify-center text-blue-400">
                   <Code className="w-6 h-6" />
                 </div>
-                <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-xs font-mono text-blue-400 font-semibold">
+                <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-ms font-mono text-blue-400 font-semibold">
                   {t.differentiator.rightCardBadge}
                 </span>
               </div>
@@ -91,12 +91,12 @@ export default function DifferentiatorSection() {
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                   {t.differentiator.rightCardTitle}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-400">
+                <p className="text-ms sm:text-sm text-slate-400">
                   {t.differentiator.rightCardDescription}
                 </p>
               </div>
 
-              <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+              <ul className="space-y-3 text-ms sm:text-sm text-slate-300">
                 {t.differentiator.rightCardBullets.map((bullet, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
@@ -112,7 +112,7 @@ export default function DifferentiatorSection() {
                 <span>custom-logic.js</span>
                 <span className="text-emerald-400">Calculated State</span>
               </div>
-              <div className="text-xs text-slate-300 overflow-x-auto">
+              <div className="text-ms text-slate-300 overflow-x-auto">
                 <span className="text-purple-400">const</span> quote = computeEstimate(inputs);
               </div>
             </div>

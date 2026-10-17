@@ -21,10 +21,10 @@ export default function GccExperienceSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4 mb-16">
-          <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+          <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.gcc.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white max-lg:leading-snug lg:leading-tight">
             {t.gcc.headline}
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -47,7 +47,7 @@ export default function GccExperienceSection() {
                 {feature.title}
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-ms sm:text-sm text-slate-300 leading-relaxed">
                 {feature.desc}
               </p>
             </div>
@@ -56,11 +56,11 @@ export default function GccExperienceSection() {
 
         {/* Regional Proof Bar */}
         <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#06080d] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
+          <div className="flex items-center gap-4 text-ms font-mono text-slate-400">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
             <span>{t.gcc.proofLocation}</span>
           </div>
-          <div className="text-xs text-sky-400 font-mono tracking-wider">
+          <div className="text-ms text-sky-400 font-mono tracking-wider">
             {t.gcc.proofExperience}
           </div>
         </div>

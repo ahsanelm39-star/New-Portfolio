@@ -79,7 +79,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                       {heroProject.title[lang]}
                     </h3>
 
-                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    <p className="text-slate-300 text-ms sm:text-md leading-relaxed">
                       {heroProject.overview[lang]}
                     </p>
 
@@ -159,7 +159,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                       {project.title[lang]}
                     </h3>
 
-                    <p className="text-slate-300 text-xs sm:text-sm line-clamp-3 leading-relaxed">
+                    <p className="text-slate-300 text-ms sm:text-md line-clamp-3 leading-relaxed">
                       {project.overview[lang]}
                     </p>
 
@@ -178,7 +178,7 @@ export default function SelectedWork({ projects }: SelectedWorkProps) {
                 </div>
 
                 {/* Footer Action Buttons */}
-                <div className="p-6 sm:p-8 pt-0 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
+                <div className="p-6 pt-4 sm:p-8  flex items-center justify-between gap-3 border-t border-white/5 mt-4">
                   <Link
                     href={`/work/${project.slug}`}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300 transition-colors"

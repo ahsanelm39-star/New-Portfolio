@@ -45,7 +45,7 @@ export default function ContactForm() {
         <h3 className="text-2xl font-bold text-white tracking-tight">
           {t.contactPage.successTitle}
         </h3>
-        <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+        <p className="text-ms sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
           {t.contactPage.successDesc}
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function ContactForm() {
         <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
           {t.contactPage.formTitle}
         </h2>
-        <p className="text-xs sm:text-sm text-slate-400 mt-1">
+        <p className="text-ms sm:text-sm text-slate-400 mt-1">
           {t.contactPage.formDesc}
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function ContactForm() {
         {/* Name & Email Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label htmlFor="contact-name" className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-name" className="text-ms font-mono text-slate-300 block">
               {t.contactPage.nameLabel} <span className="text-sky-400">*</span>
             </label>
             <input
@@ -82,7 +82,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="contact-email" className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-email" className="text-ms font-mono text-slate-300 block">
               {t.contactPage.formEmailLabel} <span className="text-sky-400">*</span>
             </label>
             <input
@@ -99,7 +99,7 @@ export default function ContactForm() {
         {/* Company & Phone Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label htmlFor="contact-company" className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-company" className="text-ms font-mono text-slate-300 block">
               {t.contactPage.companyLabel}
             </label>
             <input
@@ -112,7 +112,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="contact-phone" className="text-xs font-mono text-slate-300 block">
+            <label htmlFor="contact-phone" className="text-ms font-mono text-slate-300 block">
               {t.contactPage.formPhoneLabel}
             </label>
             <input
@@ -127,7 +127,7 @@ export default function ContactForm() {
 
         {/* Project Type */}
         <div className="space-y-1.5">
-          <label htmlFor="contact-project-type" className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-project-type" className="text-ms font-mono text-slate-300 block">
             {t.contactPage.typeLabel}
           </label>
           <select
@@ -145,7 +145,7 @@ export default function ContactForm() {
 
         {/* Budget Range (Optional) */}
         <div className="space-y-1.5">
-          <label htmlFor="contact-budget" className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-budget" className="text-ms font-mono text-slate-300 block">
             {t.contactPage.budgetLabel}
           </label>
           <select
@@ -163,7 +163,7 @@ export default function ContactForm() {
 
         {/* Message */}
         <div className="space-y-1.5">
-          <label htmlFor="contact-message" className="text-xs font-mono text-slate-300 block">
+          <label htmlFor="contact-message" className="text-ms font-mono text-slate-300 block">
             {t.contactPage.messageLabel} <span className="text-sky-400">*</span>
           </label>
           <textarea
@@ -179,14 +179,14 @@ export default function ContactForm() {
         {/* Submit Button */}
         <div className="pt-2">
           {submitError && (
-            <p role="alert" className="mb-3 text-xs text-rose-300">
+            <p role="alert" className="mb-3 text-ms text-rose-300">
               {submitError}
             </p>
           )}
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-4 rounded-xl bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500 hover:from-sky-300 hover:to-blue-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-lg shadow-sky-500/20 active:scale-[0.98] disabled:opacity-50 flex items-center justify-center gap-2"
+            className="w-full py-4 rounded-xl bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500 hover:from-sky-300 hover:to-blue-400 text-slate-950 font-bold text-ms sm:text-sm transition-all shadow-lg shadow-sky-500/20 active:scale-[0.98] disabled:opacity-50 flex items-center justify-center gap-2"
           >
             <span>{loading ? t.contactPage.submittingBtn : t.contactPage.submitBtn}</span>
             <Send className={cn('w-4 h-4', isRtl && 'rotate-180')} />

@@ -20,10 +20,10 @@ export default function ServicesPreview() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl space-y-3">
-            <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+            <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.servicesSection.eyebrow}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white max-lg:leading-snug lg:leading-tight">
               {t.servicesSection.headline}
             </h2>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -33,7 +33,7 @@ export default function ServicesPreview() {
 
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-xs font-semibold px-5 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 hover:text-white transition-all self-start md:self-auto shrink-0"
+            className="inline-flex items-center gap-2 text-ms font-semibold px-5 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 hover:text-white transition-all self-start md:self-auto shrink-0"
           >
             <span>{t.servicesSection.viewAllServices}</span>
             <ArrowUpRight className={cn('w-4 h-4', isRtl && 'rotate-90')} />
@@ -49,23 +49,23 @@ export default function ServicesPreview() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono text-sky-400 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20">
+                  <span className="text-ms font-mono text-sky-400 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20">
                     {service.badge[lang]}
                   </span>
-                  <span className="text-xs font-mono text-slate-500">0{service.order}</span>
+                  <span className="text-ms font-mono text-slate-500">0{service.order}</span>
                 </div>
 
                 <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-sky-300 transition-colors">
                   {service.title[lang]}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p className="text-ms sm:text-sm text-slate-300 leading-relaxed">
                   {service.subtitle[lang]}
                 </p>
 
                 {/* Key Deliverables Bullet Points */}
                 <div className="pt-2 space-y-2 border-t border-white/5">
-                  <ul className="space-y-1.5 text-xs text-slate-400">
+                  <ul className="space-y-1.5 text-ms text-slate-400">
                     {service.deliverables[lang].slice(0, 2).map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <Check className="w-3.5 h-3.5 text-sky-400 mt-0.5 shrink-0" />
@@ -79,7 +79,7 @@ export default function ServicesPreview() {
               <div className="pt-4 flex items-center justify-between border-t border-white/5">
                 <Link
                   href="/services"
-                  className="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                  className="text-ms font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
                 >
                   <span>{t.servicesSection.learnMore}</span>
                   <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />

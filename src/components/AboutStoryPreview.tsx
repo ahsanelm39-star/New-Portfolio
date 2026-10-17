@@ -17,11 +17,11 @@ export default function AboutStoryPreview() {
           
           {/* Narrative Column (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+            <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
               {t.aboutSection.eyebrow}
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white max-lg:leading-snug lg:leading-tight">
               {t.aboutSection.headline}
             </h2>
 
@@ -34,7 +34,7 @@ export default function AboutStoryPreview() {
             <div className="pt-4">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-xs font-semibold px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-all shadow-sm"
+                className="inline-flex items-center gap-2 text-ms font-semibold px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-all shadow-sm"
               >
                 <span>{t.aboutSection.ctaAbout}</span>
                 <ArrowUpRight className={cn('w-4 h-4', isRtl && 'rotate-90')} />
@@ -60,7 +60,7 @@ export default function AboutStoryPreview() {
                       <h4 className="text-sm font-bold text-white mb-0.5">
                         {step.title}
                       </h4>
-                      <p className="text-xs text-slate-400 leading-relaxed">
+                      <p className="text-ms text-slate-400 leading-relaxed">
                         {step.desc}
                       </p>
                     </div>

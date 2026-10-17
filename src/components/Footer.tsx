@@ -25,7 +25,7 @@ export default function Footer() {
                 AHMED<span className="text-sky-400">.</span>
               </span>
             </Link>
-            <p className="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            <p className="text-ms text-slate-400 max-w-sm leading-relaxed">
               {t.footer.brandDesc}
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono">
@@ -36,10 +36,10 @@ export default function Footer() {
 
           {/* Quick Navigation (Col 6-7) */}
           <div className="md:col-span-2 space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold">
+            <h4 className="text-ms font-mono uppercase tracking-wider text-slate-200 font-semibold">
               {t.footer.navHeading}
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-2 text-ms">
               <li>
                 <Link href="/" className="hover:text-white transition-colors">
                   {t.nav.home}
@@ -70,10 +70,10 @@ export default function Footer() {
 
           {/* Specializations (Col 8-10) */}
           <div className="md:col-span-3 space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold">
+            <h4 className="text-ms font-mono uppercase tracking-wider text-slate-200 font-semibold">
               {t.footer.servicesHeading}
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-2 text-ms">
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
                   {t.footer.webflowService}
@@ -99,10 +99,10 @@ export default function Footer() {
 
           {/* Direct Inquiries (Col 11-12) */}
           <div className="md:col-span-2 space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold">
+            <h4 className="text-ms font-mono uppercase tracking-wider text-slate-200 font-semibold">
               {t.footer.contactHeading}
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-2 text-ms">
               <li>
                 <a
                   href={`https://wa.me/201097926288`}
@@ -143,11 +143,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Verified Note */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-ms text-slate-500">
           <div>
             &copy; {currentYear} {t.footer.copyright}
           </div>
-          <div className="text-[11px] font-mono text-slate-500">
+          <div className="text-[12px] font-mono text-slate-500">
             {t.footer.verifiedNote}
           </div>
         </div>

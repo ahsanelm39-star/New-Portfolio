@@ -31,7 +31,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         <div className="mb-10">
           <Link
             href="/work"
-            className="inline-flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-sky-400 transition-colors"
+            className="inline-flex items-center gap-2 text-ms font-mono text-slate-400 hover:text-sky-400 transition-colors"
           >
             <ArrowLeft className={cn('w-4 h-4', isRtl && 'rotate-180')} />
             <span>{t.caseStudy.backToWork}</span>
@@ -41,12 +41,12 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         {/* Case Study Hero Header */}
         <header className="space-y-6 max-w-4xl mb-14">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-xs font-mono text-sky-400">
+            <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/20 text-ms font-mono text-sky-400">
               {project.industry[lang]}
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white max-lg:leading-tight lg:leading-tight">
             {project.title[lang]}
           </h1>
 
@@ -61,7 +61,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-semibold px-6 py-3.5 rounded-full bg-sky-400 hover:bg-sky-300 text-slate-950 transition-all shadow-lg shadow-sky-500/20"
+                className="inline-flex items-center gap-2 text-ms font-semibold px-6 py-3.5 rounded-full bg-sky-400 hover:bg-sky-300 text-slate-950 transition-all shadow-lg shadow-sky-500/20"
               >
                 <span>{t.caseStudy.visitLiveSite}</span>
                 <ExternalLink className="w-4 h-4" />
@@ -71,7 +71,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         </header>
 
         {/* Intelligence Metadata Dossier */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl bg-[#0c0f17] border border-white/10 mb-14 text-xs">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl bg-[#0c0f17] border border-white/10 mb-14 text-ms">
           <div className="space-y-1">
             <span className="text-[11px] font-mono uppercase text-slate-500 block">
               {t.caseStudy.roleLabel}
@@ -111,7 +111,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
         {/* Featured Browser Mockup Preview */}
         <div className="rounded-3xl bg-[#0c0f17] border border-white/10 p-2 sm:p-3 shadow-2xl mb-16 overflow-hidden">
-          <div className="bg-[#08090d] px-4 py-3 rounded-t-2xl border-b border-white/10 flex items-center justify-between text-xs font-mono text-slate-500">
+          <div className="bg-[#08090d] px-4 py-3 rounded-t-2xl border-b border-white/10 flex items-center justify-between text-ms font-mono text-slate-500">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
               <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
@@ -143,7 +143,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
                 <div className="text-2xl sm:text-3xl font-extrabold text-sky-400 font-mono">
                   {metric.value}
                 </div>
-                <div className="text-xs text-slate-400 mt-1 font-medium">
+                <div className="text-ms text-slate-400 mt-1 font-medium">
                   {metric.label[lang]}
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {project.keyFeatures[lang].map((feat, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0c0f17] border border-white/5 text-xs text-slate-300 space-y-1">
+                  <div key={idx} className="p-4 rounded-2xl bg-[#0c0f17] border border-white/5 text-ms text-slate-300 space-y-1">
                     <span className="text-sky-400 font-mono text-[10px] block">0{idx + 1}</span>
                     <p className="leading-relaxed">{feat}</p>
                   </div>
@@ -227,7 +227,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               </h2>
               <div className="space-y-3">
                 {project.keyTakeaways[lang].map((takeaway, idx) => (
-                  <div key={idx} className="p-5 rounded-2xl bg-sky-950/20 border border-sky-400/20 text-xs sm:text-sm text-sky-200 leading-relaxed">
+                  <div key={idx} className="p-5 rounded-2xl bg-sky-950/20 border border-sky-400/20 text-ms sm:text-sm text-sky-200 leading-relaxed">
                     {takeaway}
                   </div>
                 ))}
@@ -244,7 +244,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
               </h3>
 
               {project.platformContextNote && (
-                <div className="p-4 rounded-xl bg-white/5 border border-white/5 text-xs text-slate-300 leading-relaxed">
+                <div className="p-4 rounded-xl bg-white/5 border border-white/5 text-ms text-slate-300 leading-relaxed">
                   <span className="font-semibold text-sky-400 block mb-1">{t.caseStudy.implementationContext}</span>
                   {project.platformContextNote[lang]}
                 </div>
@@ -252,12 +252,12 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
               {/* Technologies */}
               <div className="space-y-2">
-                <span className="text-xs text-slate-400 block">{t.caseStudy.implementationStack}</span>
+                <span className="text-ms text-slate-400 block">{t.caseStudy.implementationStack}</span>
                 <div className="flex flex-wrap gap-1.5">
                   {project.techTags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 rounded-full text-xs font-mono bg-white/5 border border-white/10 text-slate-300"
+                      className="px-2.5 py-1 rounded-full text-ms font-mono bg-white/5 border border-white/10 text-slate-300"
                     >
                       {tag}
                     </span>
@@ -272,7 +272,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-white transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-ms font-semibold text-white transition-colors"
                   >
                     <span>{t.caseStudy.visitLiveSite}</span>
                     <ExternalLink className="w-3.5 h-3.5 text-sky-400" />
@@ -282,10 +282,10 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
 
               {/* Direct Project Consultation */}
               <div className="pt-4 border-t border-white/5 space-y-2">
-                <span className="text-xs text-slate-300 font-semibold block">{t.caseStudy.similarProjectPrompt}</span>
+                <span className="text-ms text-slate-300 font-semibold block">{t.caseStudy.similarProjectPrompt}</span>
                 <Link
                   href="/contact"
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-sky-400 hover:bg-sky-300 text-slate-950 text-xs font-bold transition-all shadow-md shadow-sky-500/20"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-sky-400 hover:bg-sky-300 text-slate-950 text-ms font-bold transition-all shadow-md shadow-sky-500/20"
                 >
                   <span>{t.caseStudy.ctaBtn}</span>
                   <ArrowUpRight className={cn('w-3.5 h-3.5', isRtl && 'rotate-90')} />
@@ -301,7 +301,7 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
         {nextProject && (
           <div className="pt-16 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <span className="text-xs font-mono uppercase text-slate-500 block mb-1">
+              <span className="text-ms font-mono uppercase text-slate-500 block mb-1">
                 {t.caseStudy.nextProject}
               </span>
               <h4 className="text-xl sm:text-2xl font-bold text-white hover:text-sky-400 transition-colors">
@@ -309,12 +309,12 @@ export default function CaseStudyView({ project, nextProject }: CaseStudyViewPro
                   {nextProject.title[lang]}
                 </Link>
               </h4>
-              <span className="text-xs text-slate-400">{nextProject.industry[lang]}</span>
+              <span className="text-ms text-slate-400">{nextProject.industry[lang]}</span>
             </div>
 
             <Link
               href={`/work/${nextProject.slug}`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-white transition-all self-start sm:self-auto"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-ms font-semibold text-white transition-all self-start sm:self-auto"
             >
               <span>{t.caseStudy.nextProjectLink}</span>
               <ArrowRight className={cn('w-4 h-4', isRtl && 'rotate-180')} />

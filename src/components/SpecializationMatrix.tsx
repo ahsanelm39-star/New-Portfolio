@@ -23,7 +23,7 @@ export default function SpecializationMatrix() {
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4 mb-16">
-          <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+          <span className="text-ms font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.specialization.eyebrow}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight lg:leading-snug">
@@ -46,7 +46,7 @@ export default function SpecializationMatrix() {
                   <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center group-hover:scale-110 group-hover:bg-sky-400/20 transition-all">
                     {iconMap[index]}
                   </div>
-                  <span className="text-xs font-mono text-slate-500 group-hover:text-sky-400/70 transition-colors">
+                  <span className="text-ms font-mono text-slate-500 group-hover:text-sky-400/70 transition-colors">
                     0{index + 1}
                   </span>
                 </div>
@@ -55,7 +55,7 @@ export default function SpecializationMatrix() {
                   {item.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                <p className="text-ms sm:text-sm text-slate-400 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

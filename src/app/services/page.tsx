@@ -42,7 +42,7 @@ export default function ServicesPage() {
           <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
             {t.servicesPage.eyebrow}
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white max-lg:leading-tight lg:leading-tight">
             {t.servicesPage.headline}
           </h1>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">

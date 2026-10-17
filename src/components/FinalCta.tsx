@@ -17,7 +17,7 @@ export default function FinalCta() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
         
         {/* Availability Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/25 text-sky-400 text-xs font-mono">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/25 text-sky-400 text-ms font-mono">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>{t.hero.statusAvailable}</span>
         </div>
@@ -54,7 +54,7 @@ export default function FinalCta() {
         </div>
 
         {/* Direct Communication Channels */}
-        <div className="pt-8 border-t border-white/5 max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-medium text-slate-400">
+        <div className="pt-8 border-t border-white/5 max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-ms font-medium text-slate-400">
           <span>{t.finalCta.orContactVia}</span>
           <div className="flex items-center gap-4">
             <a
