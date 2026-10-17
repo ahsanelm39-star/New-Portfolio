@@ -183,7 +183,7 @@ export default function Hero() {
             </div>
 
             <div className="col-span-1 md:col-span-1 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/5">
-              <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
+              <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight font-mono text-sky-400">
                 {t.hero.metrics.customCodeValue}
               </div>
               <div className="text-sm sm:text-lg text-slate-400 mt-2 font-medium">
